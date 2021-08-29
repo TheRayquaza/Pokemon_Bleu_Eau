@@ -1,18 +1,18 @@
-## _Pokemon-Bleu-Eau-Alpha_
-# Informations :
+# _Pokemon-Bleu-Eau_
+
+## Informations ℹ️
 - Last version => Februar 2021
-- Actual Version supported : Windows (Android Soon)
-- Made with Godot Engine in Gdscript only.
+- Actual Version supported : Windows
+- Made with Godot Engine in Gdscript only
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Descriptions :
+## Descriptions 🔎
  - This repository countains all our Fun Pokemon remaster project ! 
  - You can test the game if you want, it's the alpha for now, we are working on it to finish this wonderfull challenge ! 
-Have fun !
+> Have fun !
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Notes :
+## Notes 📜
 - You can copy the files , play the game, continue the project ! 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Contact me : 
-- PokemonBleuEau@gmail.com (mail of the project)
-- mateo.lelong@gmail.com (coordinator of the project and developper)
-- gedeonmuyalaba@gmail.com (developper)
+## Contact us 📞
+✅ mateo.lelong@gmail.com
+> ❓ We are available to answer all of your questions : we listen to the players ❓
