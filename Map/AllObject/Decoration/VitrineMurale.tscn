@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://img Pokemon/img Map/Environnement/Texture Mur/VitrineMurale.png" type="Texture" id=1]
+[ext_resource path="res://Map/AllObject/AnObject4.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 18.4458, 31.543 )
+
+[node name="VitrineMurale" type="Area2D" groups=[
+"StaticMessage",
+]]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )

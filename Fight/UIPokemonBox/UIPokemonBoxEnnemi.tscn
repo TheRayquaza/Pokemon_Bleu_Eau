@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://img Pokemon/img Fight/UIPokemonBox/BoxEnnemi.png" type="Texture" id=1]
+[ext_resource path="res://Font/24Font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://img Pokemon/img Fight/UIPokemonBox/Under.png" type="Texture" id=3]
+
+[node name="UIPokemonBoxEnnemi" type="Popup"]
+visible = true
+margin_left = 53.5606
+margin_top = 32.3114
+margin_right = 453.56
+margin_bottom = 172.312
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Box" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PVBox" type="TextureRect" parent="."]
+margin_left = 63.2904
+margin_top = 40.7096
+margin_right = 363.29
+margin_bottom = 70.7096
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="."]
+margin_left = 26.0
+margin_top = 19.0
+margin_right = 82.0
+margin_bottom = 44.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Name"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="."]
+margin_left = 277.0
+margin_top = 19.0
+margin_right = 317.0
+margin_bottom = 44.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.0"
+uppercase = true

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://img Pokemon/img Map/Environnement/Texture Others/CarteTableau.png" type="Texture" id=2]
+[ext_resource path="res://Map/AllObject/Others/TableauCarte.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 26.864, 27.8628 )
+
+[node name="TableauCarte" type="Area2D" groups=[
+"StaticMessage",
+]]
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )

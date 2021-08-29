@@ -1,0 +1,165 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Font/60Font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://GUI/BlackMarket/BlackMarket.gd" type="Script" id=2]
+[ext_resource path="res://Font/24Font.tres" type="DynamicFont" id=9]
+[ext_resource path="res://img Pokemon/img Bag/Graphic/OutsideButtonLittle-Red.png" type="Texture" id=10]
+[ext_resource path="res://img Pokemon/img Bag/Graphic/OutsideButtonLittle.png" type="Texture" id=11]
+
+[sub_resource type="StyleBoxFlat" id=1]
+
+[sub_resource type="StyleBoxFlat" id=2]
+
+[sub_resource type="StyleBoxFlat" id=3]
+
+[sub_resource type="StyleBoxFlat" id=4]
+
+[sub_resource type="StyleBoxFlat" id=5]
+
+[sub_resource type="StyleBoxFlat" id=6]
+
+[node name="BlackMarket" type="ColorRect"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.109804, 0.427451, 0.4, 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon1" type="Button" parent="."]
+margin_left = 28.0106
+margin_top = 79.7229
+margin_right = 528.011
+margin_bottom = 176.723
+custom_styles/focus = SubResource( 1 )
+custom_fonts/font = ExtResource( 9 )
+disabled = true
+text = "Dracaufeu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon2" type="Button" parent="."]
+margin_left = 27.6702
+margin_top = 207.042
+margin_right = 524.67
+margin_bottom = 302.042
+custom_styles/focus = SubResource( 2 )
+custom_fonts/font = ExtResource( 9 )
+text = "Carapuce"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon3" type="Button" parent="."]
+margin_left = 28.3298
+margin_top = 335.063
+margin_right = 520.33
+margin_bottom = 438.063
+custom_styles/focus = SubResource( 3 )
+custom_fonts/font = ExtResource( 9 )
+text = "Salameche"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon4" type="Button" parent="."]
+margin_left = 560.34
+margin_top = 79.0527
+margin_right = 1007.34
+margin_bottom = 184.053
+custom_styles/focus = SubResource( 4 )
+custom_fonts/font = ExtResource( 9 )
+text = "Salameche"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon5" type="Button" parent="."]
+margin_left = 561.723
+margin_top = 206.372
+margin_right = 1001.72
+margin_bottom = 299.372
+custom_styles/focus = SubResource( 5 )
+custom_fonts/font = ExtResource( 9 )
+text = "Salameche"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon6" type="Button" parent="."]
+margin_left = 560.66
+margin_top = 334.712
+margin_right = 1000.66
+margin_bottom = 436.712
+custom_styles/focus = SubResource( 6 )
+custom_fonts/font = ExtResource( 9 )
+text = "Salameche"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConfirmButton" type="Button" parent="."]
+margin_left = 619.0
+margin_top = 473.557
+margin_right = 924.0
+margin_bottom = 528.557
+custom_fonts/font = ExtResource( 9 )
+text = "Valider l'échange ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 34.0
+margin_top = 471.0
+margin_right = 554.0
+margin_bottom = 531.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Price" type="Label" parent="."]
+margin_left = 33.0
+margin_top = 471.0
+margin_right = 469.0
+margin_bottom = 535.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+margin_left = 315.53
+margin_top = -1.67212
+margin_right = 729.53
+margin_bottom = 65.3279
+custom_fonts/font = ExtResource( 1 )
+text = "Marché Noir :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Outside" type="TextureButton" parent="."]
+margin_left = 927.165
+margin_top = 0.0409622
+margin_right = 1026.16
+margin_bottom = 75.041
+texture_normal = ExtResource( 11 )
+texture_hover = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Pokemon1" to="." method="_on_Pokemon1_pressed"]
+[connection signal="pressed" from="Pokemon2" to="." method="_on_Pokemon2_pressed"]
+[connection signal="pressed" from="Pokemon3" to="." method="_on_Pokemon3_pressed"]
+[connection signal="pressed" from="Pokemon4" to="." method="_on_Pokemon4_pressed"]
+[connection signal="pressed" from="Pokemon5" to="." method="_on_Pokemon5_pressed"]
+[connection signal="pressed" from="Pokemon6" to="." method="_on_Pokemon6_pressed"]
+[connection signal="pressed" from="ConfirmButton" to="." method="_on_ConfirmButton_pressed"]
+[connection signal="pressed" from="Outside" to="." method="_on_Outside_pressed"]

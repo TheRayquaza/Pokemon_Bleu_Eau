@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://img Pokemon/img Map/Inside-Outside/door.png" type="Texture" id=1]
+[ext_resource path="res://img Pokemon/img Map/Inside-Outside/arrow.png" type="Texture" id=2]
+[ext_resource path="res://Map/Inside-Outside/InsideOutside.gd" type="Script" id=3]
+[ext_resource path="res://Animation/ChangeScene.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 24.2322, 14.8676 )
+
+[node name="InsideOutside" type="TextureRect"]
+margin_right = 50.0
+margin_bottom = 32.0
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arrow" type="TextureRect" parent="."]
+visible = false
+margin_left = -1.0
+margin_top = 33.7273
+margin_right = 49.0
+margin_bottom = 66.7273
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+position = Vector2( 23.2484, 14.9548 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2( 1.67244, -0.418121 )
+shape = SubResource( 1 )
+
+[node name="ChangeScene" parent="." instance=ExtResource( 4 )]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

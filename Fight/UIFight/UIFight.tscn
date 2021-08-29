@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Font/Font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://img Pokemon/img Fight/UIFight/Box.png" type="Texture" id=2]
+[ext_resource path="res://Fight/UIFight/UIFight.gd" type="Script" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Show_Text"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Text:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[node name="UIFight" type="Popup"]
+margin_top = 2.0
+margin_right = 1026.0
+margin_bottom = 185.0
+popup_exclusive = true
+script = ExtResource( 3 )
+
+[node name="BG" type="ColorRect" parent="."]
+margin_right = 1026.0
+margin_bottom = 174.0
+color = Color( 0.156863, 0.313726, 0.407843, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 625.0
+margin_bottom = 174.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="RichTextLabel" parent="."]
+margin_left = 48.0
+margin_top = 31.0
+margin_right = 566.0
+margin_bottom = 141.0
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+visible_characters = 0
+percent_visible = 0.0
+meta_underlined = false
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShowText" type="AnimationPlayer" parent="."]
+anims/Show_Text = SubResource( 1 )
+[connection signal="tree_entered" from="." to="." method="_on_UIFight_tree_entered"]

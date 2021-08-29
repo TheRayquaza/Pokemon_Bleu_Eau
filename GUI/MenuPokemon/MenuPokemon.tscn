@@ -1,0 +1,729 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://img Pokemon/img MenuPokemon/boxP.png" type="Texture" id=1]
+[ext_resource path="res://img Pokemon/img MenuPokemon/boxH.png" type="Texture" id=2]
+[ext_resource path="res://img Pokemon/img MenuPokemon/OutOpen.png" type="Texture" id=3]
+[ext_resource path="res://Font/Font.tres" type="DynamicFont" id=4]
+[ext_resource path="res://img Pokemon/img MenuPokemon/TextureProgress.png" type="Texture" id=5]
+[ext_resource path="res://img Pokemon/img MenuPokemon/PV.png" type="Texture" id=6]
+[ext_resource path="res://img Pokemon/All Pokemon/Overworld/3.png" type="Texture" id=7]
+[ext_resource path="res://img Pokemon/img MenuPokemon/pokeball-close.png" type="Texture" id=8]
+[ext_resource path="res://img Pokemon/All Pokemon/Overworld/1.png" type="Texture" id=9]
+[ext_resource path="res://img Pokemon/All Pokemon/Overworld/2.png" type="Texture" id=10]
+[ext_resource path="res://img Pokemon/All Pokemon/Overworld/6.png" type="Texture" id=11]
+[ext_resource path="res://GUI/MenuPokemon/MenuPokemon.gd" type="Script" id=14]
+[ext_resource path="res://img Pokemon/img MenuPokemon/Empty.png" type="Texture" id=15]
+[ext_resource path="res://img Pokemon/img MenuPokemon/TextureUnder.png" type="Texture" id=16]
+[ext_resource path="res://Font/24Font.tres" type="DynamicFont" id=18]
+[ext_resource path="res://img Pokemon/img Fight/Graphique/Arrow.png" type="Texture" id=19]
+
+[sub_resource type="Animation" id=1]
+resource_name = "show_text"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("RichTextLabel:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[node name="MenuPokemon" type="ColorRect"]
+pause_mode = 2
+margin_right = 1026.0
+margin_bottom = 600.0
+color = Color( 0.129412, 0.407843, 0.376471, 1 )
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpeackBox" type="Popup" parent="."]
+visible = true
+margin_left = 16.2714
+margin_top = 348.216
+margin_right = 161.271
+margin_bottom = 488.216
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="SpeackBox"]
+margin_right = 145.0
+margin_bottom = 140.0
+color = Color( 0.313726, 0.396078, 0.945098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Confirm" type="Label" parent="SpeackBox"]
+margin_left = -1.21762
+margin_top = 8.371
+margin_right = 146.782
+margin_bottom = 33.371
+custom_fonts/font = ExtResource( 18 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Confirmer ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Oui" type="Label" parent="SpeackBox"]
+margin_left = 76.086
+margin_top = 45.3245
+margin_right = 120.086
+margin_bottom = 78.3245
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Oui"
+
+[node name="Non" type="Label" parent="SpeackBox"]
+margin_left = 76.0002
+margin_top = 91.2002
+margin_right = 116.0
+margin_bottom = 105.2
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Non"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arrow1" type="TextureRect" parent="SpeackBox"]
+margin_left = 33.4751
+margin_top = 45.19
+margin_right = 56.4751
+margin_bottom = 80.19
+texture = ExtResource( 19 )
+
+[node name="Arrow2" type="TextureRect" parent="SpeackBox"]
+visible = false
+margin_left = 32.7387
+margin_top = 88.2056
+margin_right = 55.7387
+margin_bottom = 123.206
+texture = ExtResource( 19 )
+
+[node name="Pokemon1" type="TextureRect" parent="."]
+margin_left = 36.7695
+margin_top = 45.2548
+margin_right = 484.77
+margin_bottom = 300.255
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Pokemon1"]
+margin_left = 172.712
+margin_top = 63.4919
+margin_right = 255.712
+margin_bottom = 96.4919
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="Pokemon1"]
+margin_left = 174.188
+margin_top = 103.644
+margin_right = 215.188
+margin_bottom = 136.644
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "NV.0"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hp" type="TextureRect" parent="Pokemon1"]
+margin_left = 172.635
+margin_top = 144.321
+margin_right = 412.635
+margin_bottom = 174.321
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="Pokemon1/Hp"]
+margin_left = 56.3416
+margin_top = 5.01584
+margin_right = 236.342
+margin_bottom = 25.0158
+texture_under = ExtResource( 16 )
+texture_progress = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HpScript" type="Label" parent="Pokemon1"]
+margin_left = 302.0
+margin_top = 177.0
+margin_right = 353.0
+margin_bottom = 210.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0/0"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PokemonTexture" type="TextureRect" parent="Pokemon1"]
+margin_left = 53.4657
+margin_top = 104.832
+margin_right = 113.466
+margin_bottom = 168.832
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokeball" type="TextureRect" parent="Pokemon1"]
+margin_left = 5.62264
+margin_top = 2.98116
+margin_right = 65.6226
+margin_bottom = 62.9812
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Empty2" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 22.5
+margin_right = 1000.0
+margin_bottom = 92.5
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon2" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 20.0
+margin_right = 1002.0
+margin_bottom = 94.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Pokemon2"]
+margin_left = 90.0
+margin_top = 7.0
+margin_right = 240.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="Pokemon2"]
+margin_left = 140.0
+margin_top = 36.0
+margin_right = 237.0
+margin_bottom = 69.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Nv.0"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hp" type="TextureRect" parent="Pokemon2"]
+margin_left = 250.0
+margin_top = 9.0
+margin_right = 490.0
+margin_bottom = 41.0
+rect_scale = Vector2( 0.8, 0.7 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="Pokemon2/Hp"]
+margin_left = 56.0
+margin_top = 5.0
+margin_right = 236.0
+margin_bottom = 28.0
+value = 30.0
+texture_under = ExtResource( 16 )
+texture_progress = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HpScript" type="Label" parent="Pokemon2"]
+margin_left = 320.0
+margin_top = 33.0
+margin_right = 371.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0/0"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokeball" type="TextureRect" parent="Pokemon2"]
+margin_left = 16.0
+margin_top = 6.0
+margin_right = 76.0
+margin_bottom = 66.0
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PokemonTexture" type="TextureRect" parent="Pokemon2"]
+margin_left = 24.0
+margin_top = 6.0
+margin_right = 94.0
+margin_bottom = 76.0
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Empty3" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 122.5
+margin_right = 1000.0
+margin_bottom = 192.5
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon3" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 120.0
+margin_right = 1002.0
+margin_bottom = 194.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Pokemon3"]
+margin_left = 90.0
+margin_top = 7.0
+margin_right = 240.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="Pokemon3"]
+margin_left = 140.0
+margin_top = 36.0
+margin_right = 207.0
+margin_bottom = 69.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "NV.0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hp" type="TextureRect" parent="Pokemon3"]
+margin_left = 250.0
+margin_top = 9.0
+margin_right = 490.0
+margin_bottom = 39.0
+rect_scale = Vector2( 0.8, 0.7 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="Pokemon3/Hp"]
+margin_left = 56.0
+margin_top = 5.0
+margin_right = 236.0
+margin_bottom = 25.0
+texture_under = ExtResource( 16 )
+texture_progress = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HpScript" type="Label" parent="Pokemon3"]
+margin_left = 320.0
+margin_top = 33.0
+margin_right = 371.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0/0"
+uppercase = true
+
+[node name="Pokeball" type="TextureRect" parent="Pokemon3"]
+margin_left = 16.0
+margin_top = 6.0
+margin_right = 76.0
+margin_bottom = 66.0
+texture = ExtResource( 8 )
+
+[node name="PokemonTexture" type="TextureRect" parent="Pokemon3"]
+margin_left = 24.0
+margin_top = 5.947
+margin_right = 94.0
+margin_bottom = 75.947
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Empty4" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 222.5
+margin_right = 1000.0
+margin_bottom = 292.5
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon4" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 220.0
+margin_right = 1002.0
+margin_bottom = 294.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Pokemon4"]
+margin_left = 90.0
+margin_top = 7.0
+margin_right = 240.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="Pokemon4"]
+margin_left = 140.0
+margin_top = 36.0
+margin_right = 210.0
+margin_bottom = 69.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "NV.0"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hp" type="TextureRect" parent="Pokemon4"]
+margin_left = 250.0
+margin_top = 9.0
+margin_right = 490.0
+margin_bottom = 39.0
+rect_scale = Vector2( 0.8, 0.7 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="Pokemon4/Hp"]
+margin_left = 56.0
+margin_top = 5.0
+margin_right = 236.0
+margin_bottom = 25.0
+texture_under = ExtResource( 16 )
+texture_progress = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HpScript" type="Label" parent="Pokemon4"]
+margin_left = 320.0
+margin_top = 33.0
+margin_right = 371.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0/0"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokeball" type="TextureRect" parent="Pokemon4"]
+margin_left = 16.0
+margin_top = 6.0
+margin_right = 56.0
+margin_bottom = 46.0
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PokemonTexture" type="TextureRect" parent="Pokemon4"]
+margin_left = 24.0
+margin_top = -5.0
+margin_right = 124.0
+margin_bottom = 91.0
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Empty5" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 322.5
+margin_right = 1000.0
+margin_bottom = 392.5
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon5" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 320.0
+margin_right = 1002.0
+margin_bottom = 394.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Pokemon5"]
+margin_left = 90.0
+margin_top = 7.0
+margin_right = 240.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="Pokemon5"]
+margin_left = 140.0
+margin_top = 36.0
+margin_right = 207.0
+margin_bottom = 69.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "NV.0"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hp" type="TextureRect" parent="Pokemon5"]
+margin_left = 250.0
+margin_top = 9.0
+margin_right = 490.0
+margin_bottom = 39.0
+rect_scale = Vector2( 0.8, 0.7 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="Pokemon5/Hp"]
+margin_left = 56.0
+margin_top = 5.0
+margin_right = 236.0
+margin_bottom = 25.0
+texture_under = ExtResource( 16 )
+texture_progress = ExtResource( 5 )
+
+[node name="HpScript" type="Label" parent="Pokemon5"]
+margin_left = 320.0
+margin_top = 33.0
+margin_right = 360.0
+margin_bottom = 47.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0/0"
+uppercase = true
+
+[node name="Pokeball" type="TextureRect" parent="Pokemon5"]
+margin_left = 16.0
+margin_top = 6.0
+margin_right = 76.0
+margin_bottom = 66.0
+texture = ExtResource( 8 )
+
+[node name="PokemonTexture" type="TextureRect" parent="Pokemon5"]
+margin_left = 24.0
+margin_top = -6.0
+margin_right = 129.0
+margin_bottom = 80.0
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Empty6" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 422.5
+margin_right = 1000.0
+margin_bottom = 492.5
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon6" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 420.0
+margin_right = 1002.0
+margin_bottom = 494.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Pokemon6"]
+margin_left = 90.0
+margin_top = 7.0
+margin_right = 173.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="Pokemon6"]
+margin_left = 140.0
+margin_top = 36.0
+margin_right = 180.0
+margin_bottom = 50.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "NV.0"
+
+[node name="Hp" type="TextureRect" parent="Pokemon6"]
+margin_left = 250.0
+margin_top = 9.0
+margin_right = 490.0
+margin_bottom = 39.0
+rect_scale = Vector2( 0.8, 0.7 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="Pokemon6/Hp"]
+margin_left = 56.0
+margin_top = 5.0
+margin_right = 236.0
+margin_bottom = 25.0
+texture_under = ExtResource( 16 )
+texture_progress = ExtResource( 5 )
+
+[node name="HpScript" type="Label" parent="Pokemon6"]
+margin_left = 320.0
+margin_top = 33.0
+margin_right = 360.0
+margin_bottom = 47.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0/0"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokeball" type="TextureRect" parent="Pokemon6"]
+margin_left = 16.0
+margin_top = 6.0
+margin_right = 76.0
+margin_bottom = 66.0
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PokemonTexture" type="TextureRect" parent="Pokemon6"]
+margin_left = 24.0
+margin_top = -6.0
+margin_right = 129.0
+margin_bottom = 80.0
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Out" type="TextureRect" parent="."]
+margin_left = 768.0
+margin_top = 514.0
+margin_right = 968.0
+margin_bottom = 578.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UIInfo" type="Control" parent="."]
+margin_left = 16.0
+margin_top = 506.0
+margin_right = 736.0
+margin_bottom = 591.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="ColorRect" parent="UIInfo"]
+margin_right = 720.0
+margin_bottom = 85.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UIInfo"]
+margin_left = 7.0
+margin_top = 8.0
+margin_right = 707.0
+margin_bottom = 79.0
+custom_fonts/mono_font = ExtResource( 18 )
+custom_fonts/normal_font = ExtResource( 18 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+visible_characters = 0
+percent_visible = 0.0
+text = "fdfdfdfdfdf"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="show_text" type="AnimationPlayer" parent="UIInfo"]
+anims/show_text = SubResource( 1 )

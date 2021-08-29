@@ -1,0 +1,107 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://Entities/Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://img Pokemon/img Map/Player Fixe/PlayerDos.png" type="Texture" id=2]
+[ext_resource path="res://img Pokemon/img Map/Animation/Top/1.png" type="Texture" id=3]
+[ext_resource path="res://img Pokemon/img Map/Animation/Top/2.png" type="Texture" id=4]
+[ext_resource path="res://img Pokemon/img Map/Animation/Right/2.png" type="Texture" id=5]
+[ext_resource path="res://img Pokemon/img Map/Animation/Right/1.png" type="Texture" id=6]
+[ext_resource path="res://img Pokemon/img Map/Animation/Left/1.png" type="Texture" id=7]
+[ext_resource path="res://img Pokemon/img Map/Animation/Left/2.png" type="Texture" id=8]
+[ext_resource path="res://img Pokemon/img Map/Animation/Down/2.png" type="Texture" id=9]
+[ext_resource path="res://img Pokemon/img Map/Animation/Down/1.png" type="Texture" id=10]
+[ext_resource path="res://Others/GameTime/GameTime.tscn" type="PackedScene" id=11]
+[ext_resource path="res://img Pokemon/img Map/Animation/JumpingAir/0.png" type="Texture" id=12]
+[ext_resource path="res://img Pokemon/img Map/Animation/JumpingAir/2.png" type="Texture" id=13]
+[ext_resource path="res://img Pokemon/img Map/Animation/JumpingAir/1.png" type="Texture" id=14]
+[ext_resource path="res://img Pokemon/img Map/Animation/Right/3.png" type="Texture" id=15]
+[ext_resource path="res://img Pokemon/img Map/Animation/Top/0.png" type="Texture" id=16]
+[ext_resource path="res://img Pokemon/img Map/Animation/Right/0.png" type="Texture" id=17]
+[ext_resource path="res://img Pokemon/img Map/Animation/Left/0.png" type="Texture" id=18]
+[ext_resource path="res://img Pokemon/img Map/Animation/Down/3.png" type="Texture" id=19]
+[ext_resource path="res://img Pokemon/img Map/Animation/Down/0.png" type="Texture" id=20]
+[ext_resource path="res://img Pokemon/img Map/Animation/Top/3.png" type="Texture" id=21]
+[ext_resource path="res://img Pokemon/img Map/Animation/Left/3.png" type="Texture" id=22]
+
+
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 16 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "Top",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "Down",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "Left",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "Right",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "LeftRun",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "DownRun",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 12 ) ],
+"loop": false,
+"name": "JumpAir",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "RightRun",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "TopRun",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 14.4518
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TexturePlayer" type="Sprite" parent="."]
+scale = Vector2( 1.94338, 1.79637 )
+texture = ExtResource( 2 )
+
+[node name="Animation" type="AnimatedSprite" parent="."]
+scale = Vector2( 1.88056, 1.74627 )
+frames = SubResource( 1 )
+animation = "Top"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 7.45058e-09 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.6, 0.6 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, 30 )
+collide_with_areas = true
+
+[node name="GameTime" parent="." instance=ExtResource( 11 )]

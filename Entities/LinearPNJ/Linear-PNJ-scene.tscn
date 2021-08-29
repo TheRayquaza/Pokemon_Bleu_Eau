@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Entities/LinearPNJ/Linear-PNJ-script.gd" type="Script" id=1]
+[ext_resource path="res://img Pokemon/All PNJ/Overworld/PointExclamationCombat.png" type="Texture" id=2]
+[ext_resource path="res://img Pokemon/All PNJ/Overworld/Joggeur/Joggeur.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 20.1057, 18.1096 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 17.733
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Rouge",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "Walk",
+"speed": 5.0
+} ]
+
+[node name="LinearPNJ" type="KinematicBody2D" groups=[
+"PNJLinear",
+]]
+position = Vector2( 120.889, 61.6395 )
+script = ExtResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[node name="PNJ Box" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="Exclamation" type="AnimatedSprite" parent="."]
+position = Vector2( -0.39798, -25.855 )
+scale = Vector2( 0.441816, 0.457231 )
+frames = SubResource( 3 )
+animation = "Rouge"
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0.598724, 1.7962 )
+frames = SubResource( 4 )
+animation = "Walk"
+[connection signal="tree_entered" from="." to="." method="_on_LinearPNJ_tree_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

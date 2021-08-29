@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Map/AllObject/Others/TableauJadielleHouse1.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 64.5734, 4.24296 )
+
+[node name="TableauMur" type="StaticBody2D" groups=[
+"StaticMessage",
+]]
+script = ExtResource( 1 )
+TXT1 = "Le tableau décrit les changements de STATUT des Pokémons pendant un combat."
+TXT2 = "Quel sujet voulez vous lire ?"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 1 )

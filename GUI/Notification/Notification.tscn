@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://img Pokemon/img Overlay/Background.png" type="Texture" id=1]
+[ext_resource path="res://GUI/Notification/Notification.gd" type="Script" id=2]
+[ext_resource path="res://Font/45Font.tres" type="DynamicFont" id=3]
+
+
+[sub_resource type="Animation" id=1]
+resource_name = "display"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.4, 2, 2.3, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 20, -70 ), Vector2( 20, 0 ), Vector2( 20, 0 ), Vector2( 20, -70 ), Vector2( 20, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[node name="Notification" type="Popup"]
+pause_mode = 2
+visible = true
+margin_left = 20.0
+margin_top = -70.0
+margin_right = 370.0
+popup_exclusive = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="RichTextLabel" parent="."]
+margin_left = 8.0
+margin_top = 2.0
+margin_right = 346.0
+margin_bottom = 63.0
+custom_fonts/normal_font = ExtResource( 3 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "jadielle"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="display" type="AnimationPlayer" parent="."]
+anims/display = SubResource( 1 )

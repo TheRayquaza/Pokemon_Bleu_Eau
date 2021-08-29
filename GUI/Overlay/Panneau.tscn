@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GUI/Overlay/Panneau.gd" type="Script" id=1]
+
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 14.3854, 6.56958 )
+
+[node name="Panneau1" type="Area2D" groups=[
+"StaticMessage",
+]]
+position = Vector2( 175.872, -205.768 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.148941, 8.97828 )
+shape = SubResource( 1 )

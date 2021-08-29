@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://GUI/LoadingSave/LoadingSave.gd" type="Script" id=1]
+[ext_resource path="res://Font/24Font.tres" type="DynamicFont" id=2]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.14902, 1, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0.25098, 1, 1 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "Loading"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:value")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.9, 2.2, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 99.0, 99.5, 100.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:custom_styles/bg")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 2 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:custom_styles/fg")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ SubResource( 1 ), SubResource( 3 ) ]
+}
+
+[node name="LoadingSave" type="ProgressBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -810.0
+margin_bottom = -557.0
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 2 )
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0.180392, 1, 1 )
+value = 100.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Loading = SubResource( 4 )

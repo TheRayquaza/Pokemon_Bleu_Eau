@@ -1,0 +1,282 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://img Pokemon/img MenuSysteme/Continuer Cadre.png" type="Texture" id=1]
+[ext_resource path="res://Others/MenuSysteme/MenuSysteme.gd" type="Script" id=2]
+[ext_resource path="res://Font/60Font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://img Pokemon/img MenuSysteme/CreditsCadre.png" type="Texture" id=4]
+[ext_resource path="res://Font/45Font.tres" type="DynamicFont" id=5]
+[ext_resource path="res://img Pokemon/img MenuSysteme/Continuer Cadre hover.png" type="Texture" id=6]
+[ext_resource path="res://img Pokemon/img MenuSysteme/CreditsCadre hover.png" type="Texture" id=7]
+[ext_resource path="res://img Pokemon/img MenuSysteme/NewGame Cadre.png" type="Texture" id=8]
+[ext_resource path="res://img Pokemon/img MenuSysteme/NewGame Cadre Hover.png" type="Texture" id=9]
+
+
+[sub_resource type="Animation" id=1]
+resource_name = "ChangeScene"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="MenuSysteme" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.36041
+margin_right = 1.36035
+color = Color( 0.376471, 0.376471, 0.972549, 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Continuer" type="TextureButton" parent="."]
+margin_left = 72.0
+margin_top = 46.537
+margin_right = 954.0
+margin_bottom = 333.537
+texture_normal = ExtResource( 1 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Continuer"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 320.0
+margin_bottom = 80.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "continuer"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Joueur" type="Label" parent="Continuer"]
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 282.0
+margin_bottom = 125.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
+custom_colors/font_color_shadow = Color( 0.470588, 0.721569, 0.909804, 1 )
+text = "Joueur"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NomJoueur" type="Label" parent="Continuer"]
+margin_left = 600.0
+margin_top = 80.0
+margin_right = 708.0
+margin_bottom = 125.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
+custom_colors/font_color_shadow = Color( 0.470588, 0.721569, 0.909804, 1 )
+text = "Unknow"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Duree de jeu" type="Label" parent="Continuer"]
+margin_left = 120.0
+margin_top = 130.0
+margin_right = 436.0
+margin_bottom = 175.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
+custom_colors/font_color_shadow = Color( 0.470588, 0.721569, 0.909804, 1 )
+text = "Duree de jeu"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Temps" type="Label" parent="Continuer"]
+margin_left = 600.0
+margin_top = 130.0
+margin_right = 722.0
+margin_bottom = 175.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
+custom_colors/font_color_shadow = Color( 0.470588, 0.721569, 0.909804, 1 )
+text = "00:00"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bagdes" type="Label" parent="Continuer"]
+margin_left = 120.0
+margin_top = 180.0
+margin_right = 282.0
+margin_bottom = 225.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
+custom_colors/font_color_shadow = Color( 0.470588, 0.721569, 0.909804, 1 )
+text = "Badges"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NombreBadges" type="Label" parent="Continuer"]
+margin_left = 600.0
+margin_top = 180.0
+margin_right = 627.0
+margin_bottom = 225.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
+custom_colors/font_color_shadow = Color( 0.470588, 0.721569, 0.909804, 1 )
+text = "0"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokedex" type="Label" parent="Continuer"]
+margin_left = 120.0
+margin_top = 230.0
+margin_right = 309.0
+margin_bottom = 275.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
+custom_colors/font_color_shadow = Color( 0.470588, 0.721569, 0.909804, 1 )
+text = "Pokedex"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NombrePokedex" type="Label" parent="Continuer"]
+margin_left = 600.0
+margin_top = 230.0
+margin_right = 627.0
+margin_bottom = 275.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
+custom_colors/font_color_shadow = Color( 0.470588, 0.721569, 0.909804, 1 )
+text = "0"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NewGame" type="TextureButton" parent="."]
+margin_left = 72.0
+margin_top = 351.246
+margin_right = 954.0
+margin_bottom = 438.246
+texture_normal = ExtResource( 8 )
+texture_hover = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="NewGame"]
+margin_left = 20.0
+margin_top = 14.404
+margin_right = 518.0
+margin_bottom = 74.404
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Nouvelle partie"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credits" type="TextureButton" parent="."]
+margin_left = 73.0
+margin_top = 459.0
+margin_right = 473.0
+margin_bottom = 546.0
+texture_normal = ExtResource( 4 )
+texture_hover = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Credits"]
+margin_left = 20.0
+margin_top = 16.62
+margin_right = 248.0
+margin_bottom = 76.62
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.768627, 0.768627, 0.768627, 1 )
+text = "Credits"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Leave" type="TextureButton" parent="."]
+margin_left = 552.0
+margin_top = 459.0
+margin_right = 952.0
+margin_bottom = 546.0
+texture_normal = ExtResource( 4 )
+texture_hover = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Leave"]
+margin_left = 20.0
+margin_top = 16.62
+margin_right = 248.0
+margin_bottom = 76.62
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.768627, 0.768627, 0.768627, 1 )
+text = "Quitter"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sure" type="ConfirmationDialog" parent="."]
+margin_left = 413.0
+margin_top = 265.0
+margin_right = 613.0
+margin_bottom = 335.0
+popup_exclusive = true
+window_title = ""
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NewGameForSur" type="ConfirmationDialog" parent="."]
+margin_left = 413.0
+margin_top = 265.0
+margin_right = 613.0
+margin_bottom = 335.0
+popup_exclusive = true
+window_title = "Etes-vous sûr ?"
+dialog_text = "Votre sauvegarde s'effacera !"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/ChangeScene = SubResource( 1 )
+[connection signal="tree_entered" from="." to="." method="_on_MenuSysteme_tree_entered"]
+[connection signal="pressed" from="Continuer" to="." method="_on_Continuer_pressed"]
+[connection signal="pressed" from="NewGame" to="." method="_on_NewGame_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_Credits_pressed"]
+[connection signal="pressed" from="Leave" to="." method="_on_Leave_pressed"]
+[connection signal="confirmed" from="Sure" to="." method="_on_Sure_confirmed"]
+[connection signal="confirmed" from="NewGameForSur" to="." method="_on_NewGameForSur_confirmed"]

@@ -1,0 +1,2311 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://img Pokemon/img CT/Graphic/CTBG.png" type="Texture" id=1]
+[ext_resource path="res://img Pokemon/img CT/Graphic/CTBGDown.png" type="Texture" id=2]
+[ext_resource path="res://img Pokemon/img CT/Graphic/ButtonNormal.png" type="Texture" id=3]
+[ext_resource path="res://img Pokemon/img CT/Graphic/ButtonHover.png" type="Texture" id=4]
+[ext_resource path="res://Font/45Font.tres" type="DynamicFont" id=5]
+[ext_resource path="res://GUI/CT/CT.gd" type="Script" id=6]
+[ext_resource path="res://Font/20Font.tres" type="DynamicFont" id=7]
+[ext_resource path="res://Class/TextureButtonClassCT.gd" type="Script" id=8]
+[ext_resource path="res://Font/24Font.tres" type="DynamicFont" id=9]
+[ext_resource path="res://img Pokemon/img Bag/Graphic/OutsideButtonLittle-Red.png" type="Texture" id=10]
+[ext_resource path="res://img Pokemon/img Bag/Graphic/OutsideButtonLittle.png" type="Texture" id=11]
+
+[sub_resource type="StyleBoxFlat" id=1]
+
+[sub_resource type="StyleBoxFlat" id=2]
+
+[sub_resource type="StyleBoxFlat" id=3]
+
+[sub_resource type="StyleBoxFlat" id=4]
+
+[sub_resource type="StyleBoxFlat" id=5]
+
+[sub_resource type="StyleBoxFlat" id=6]
+
+[sub_resource type="StyleBoxFlat" id=7]
+
+[sub_resource type="StyleBoxFlat" id=8]
+
+[sub_resource type="StyleBoxFlat" id=9]
+
+[sub_resource type="StyleBoxFlat" id=10]
+
+[node name="CT" type="ColorRect"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.407843, 0.784314, 0.752941, 1 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BGTop" type="TextureRect" parent="."]
+pause_mode = 2
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="BGTop"]
+margin_left = 330.0
+margin_top = 35.0
+margin_right = 1025.0
+margin_bottom = 319.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BGTop/ScrollContainer"]
+margin_right = 680.0
+margin_bottom = 2556.0
+
+[node name="Charge" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_right = 680.0
+margin_bottom = 60.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Charge"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Charge"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Charge"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Charge"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Charge"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Griffe" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 64.0
+margin_right = 680.0
+margin_bottom = 124.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Griffe"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Griffe"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Griffe"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Griffe"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Griffe"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mimi Queue" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 128.0
+margin_right = 680.0
+margin_bottom = 188.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Mimi Queue"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Mimi Queue"]
+margin_left = 16.0
+margin_top = 7.0
+margin_right = 255.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Mimi Queue"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Mimi Queue"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Mimi Queue"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rugissement" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 192.0
+margin_right = 680.0
+margin_bottom = 252.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Rugissement"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Rugissement"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Rugissement"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Rugissement"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Rugissement"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Jet de sable" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 256.0
+margin_right = 680.0
+margin_bottom = 316.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Jet de sable"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Jet de sable"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Jet de sable"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Jet de sable"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Jet de sable"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Armure" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 320.0
+margin_right = 680.0
+margin_bottom = 380.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Armure"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Armure"]
+margin_left = 16.0
+margin_top = 7.0
+margin_right = 187.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Armure"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Armure"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Armure"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Puissance" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 384.0
+margin_right = 680.0
+margin_bottom = 444.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Puissance"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Puissance"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Puissance"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Puissance"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Puissance"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coupe" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 448.0
+margin_right = 680.0
+margin_bottom = 508.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Coupe"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Coupe"]
+margin_left = 16.0
+margin_top = 7.0
+margin_right = 178.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Coupe"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Coupe"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Coupe"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Belier" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 512.0
+margin_right = 680.0
+margin_bottom = 572.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Belier"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Belier"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Belier"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Belier"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Belier"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vive Attaque" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 576.0
+margin_right = 680.0
+margin_bottom = 636.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Vive Attaque"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Vive Attaque"]
+margin_left = 16.0
+margin_top = 7.0
+margin_right = 318.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Vive Attaque"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Vive Attaque"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Vive Attaque"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Combo-Griffe" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 640.0
+margin_right = 680.0
+margin_bottom = 700.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Combo-Griffe"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Combo-Griffe"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Combo-Griffe"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Combo-Griffe"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Combo-Griffe"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "12"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coup d\'Boule" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 704.0
+margin_right = 680.0
+margin_bottom = 764.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Coup d'Boule"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Coup d\'Boule"]
+margin_left = 16.0
+margin_top = 7.0
+margin_right = 300.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Coup d'Boule
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Coup d\'Boule"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Coup d\'Boule"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "14"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Furie" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 768.0
+margin_right = 680.0
+margin_bottom = 828.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Furie"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Furie"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Furie"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Furie"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Furie"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Damocles" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 832.0
+margin_right = 680.0
+margin_bottom = 892.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Damocles"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Damocles"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Damocles"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Damocles"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Damocles"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "20"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cyclone" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 896.0
+margin_right = 680.0
+margin_bottom = 956.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Cyclone"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Cyclone"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Cyclone"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Cyclone"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Cyclone"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "25"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vampigraine" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 960.0
+margin_right = 680.0
+margin_bottom = 1020.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Vampigraine"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Vampigraine"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Vampigraine"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Vampigraine"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Vampigraine"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fouet Lianes" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1024.0
+margin_right = 680.0
+margin_bottom = 1084.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Fouet Lianes"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Fouet Lianes"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Fouet Lianes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Fouet Lianes"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Fouet Lianes"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tranch\'Herbe" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1088.0
+margin_right = 680.0
+margin_bottom = 1148.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Tranch'Herbe"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Tranch\'Herbe"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Tranch'Herbe"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Tranch\'Herbe"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Tranch\'Herbe"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "16"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lance-Soleil" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1152.0
+margin_right = 680.0
+margin_bottom = 1212.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Lance-Soleil"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Lance-Soleil"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Lance-Soleil"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Lance-Soleil"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Lance-Soleil"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "46"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Secretion" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1216.0
+margin_right = 680.0
+margin_bottom = 1276.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Secretion"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Secretion"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Secretion"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Secretion"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Secretion"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Double Dard" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1280.0
+margin_right = 680.0
+margin_bottom = 1340.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Double Dard"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Double Dard"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Double Dard"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Double Dard"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Double Dard"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "20"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dard Venin" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1344.0
+margin_right = 680.0
+margin_bottom = 1404.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Dard Venin"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Dard Venin"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Dard Venin"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Dard Venin"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Dard Venin"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Poudre Toxik" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1408.0
+margin_right = 680.0
+margin_bottom = 1468.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Poudre Toxik"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Poudre Toxik"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Poudre Toxik"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Poudre Toxik"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Poudre Toxik"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "18"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Flammeche" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1472.0
+margin_right = 680.0
+margin_bottom = 1532.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Flammeche"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Flammeche"]
+margin_left = 16.0
+margin_top = 7.0
+margin_right = 255.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Flammeche"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Flammeche"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Flammeche"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Crocs Feu" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1536.0
+margin_right = 680.0
+margin_bottom = 1596.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Crocs Feu"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Crocs Feu"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Crocs Feu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Crocs Feu"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Crocs Feu"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rebondi Feu" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1600.0
+margin_right = 680.0
+margin_bottom = 1660.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Rebondi Feu"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Rebondi Feu"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Rebondi Feu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Rebondi Feu"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Rebondi Feu"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "20"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lance Flamme" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1664.0
+margin_right = 680.0
+margin_bottom = 1724.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Lance Flamme"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Lance Flamme"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Lance Flamme"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Lance Flamme"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Lance Flamme"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "30"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Feu d\'Enfer" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1728.0
+margin_right = 680.0
+margin_bottom = 1788.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Feu d'Enfer"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Feu d\'Enfer"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Feu d'Enfer"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Feu d\'Enfer"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Feu d\'Enfer"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "48"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ecume" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1792.0
+margin_right = 680.0
+margin_bottom = 1852.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Ecume"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Ecume"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Ecume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Ecume"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Ecume"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vibraqua" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1856.0
+margin_right = 680.0
+margin_bottom = 1916.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Vibraqua"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Vibraqua"]
+margin_left = 16.0
+margin_top = 7.0
+margin_right = 214.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Vibraqua"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Vibraqua"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Vibraqua"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "12"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hydroqueue" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1920.0
+margin_right = 680.0
+margin_bottom = 1980.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Hydroqueue"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Hydroqueue"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Hydroqueue"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Hydroqueue"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Hydroqueue"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "30"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hydrocanon" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 1984.0
+margin_right = 680.0
+margin_bottom = 2044.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Hydrocanon"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Hydrocanon"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Hydrocanon"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Hydrocanon"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Hydrocanon"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "46"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tornade" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 2048.0
+margin_right = 680.0
+margin_bottom = 2108.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Tornade"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Tornade"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Tornade"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Tornade"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Tornade"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "9"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cru Ailes" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 2112.0
+margin_right = 680.0
+margin_bottom = 2172.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Cru Ailes"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Cru Ailes"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Cru Ailes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Cru Ailes"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Cru Ailes"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "25"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pique" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 2176.0
+margin_right = 680.0
+margin_bottom = 2236.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Pique"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Pique"]
+margin_left = 16.0
+margin_top = 7.0
+margin_right = 178.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Pique"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Pique"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Pique"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Choc Mental" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 2240.0
+margin_right = 680.0
+margin_bottom = 2300.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Choc Mental"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Choc Mental"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Choc Mental"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Choc Mental"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Choc Mental"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Morsure" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 2304.0
+margin_right = 680.0
+margin_bottom = 2364.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Morsure"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Morsure"]
+margin_left = 16.0
+margin_top = 7.0
+margin_right = 205.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Morsure"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Morsure"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Morsure"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "14"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Machouille" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 2368.0
+margin_right = 680.0
+margin_bottom = 2428.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Machouille"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Machouille"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Machouille"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Machouille"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Machouille"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ouragan" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 2432.0
+margin_right = 680.0
+margin_bottom = 2492.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Ouragan"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Ouragan"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Ouragan"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Ouragan"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Ouragan"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Draco Rage" type="TextureButton" parent="BGTop/ScrollContainer/VBoxContainer"]
+margin_top = 2496.0
+margin_right = 680.0
+margin_bottom = 2556.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "test"
+}
+AttackName = "Draco Rage"
+
+[node name="Name" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Draco Rage"]
+margin_left = 16.0
+margin_top = 6.95348
+margin_right = 178.0
+margin_bottom = 51.9535
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Draco Rage"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelLvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Draco Rage"]
+margin_left = 500.0
+margin_top = 8.0
+margin_right = 587.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "LVL."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="Label" parent="BGTop/ScrollContainer/VBoxContainer/Draco Rage"]
+margin_left = 610.0
+margin_top = 8.0
+margin_right = 691.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "40"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BGDown" type="TextureRect" parent="."]
+pause_mode = 2
+margin_top = 360.0
+margin_right = 1026.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LearnButton" type="Button" parent="BGDown"]
+margin_left = 541.297
+margin_top = 13.3492
+margin_right = 874.297
+margin_bottom = 61.3492
+custom_fonts/font = ExtResource( 9 )
+text = "Apprendre Une Capacité ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Type" type="TextureRect" parent="BGDown"]
+margin_left = 215.0
+margin_top = 30.0
+margin_right = 247.0
+margin_bottom = 42.0
+rect_scale = Vector2( 4, 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Puissance" type="Label" parent="BGDown"]
+margin_left = 215.0
+margin_top = 78.0
+margin_right = 377.0
+margin_bottom = 123.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Precision" type="Label" parent="BGDown"]
+margin_left = 215.0
+margin_top = 125.0
+margin_right = 377.0
+margin_bottom = 170.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MaxPP" type="Label" parent="BGDown"]
+margin_left = 215.0
+margin_top = 170.0
+margin_right = 377.0
+margin_bottom = 215.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon" type="Control" parent="BGDown"]
+visible = false
+margin_left = 415.0
+margin_top = 70.0
+margin_right = 1015.0
+margin_bottom = 220.0
+
+[node name="BG" type="ColorRect" parent="BGDown/Pokemon"]
+margin_right = 600.0
+margin_bottom = 150.0
+color = Color( 0.129412, 0.407843, 0.376471, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon1" type="Button" parent="BGDown/Pokemon"]
+margin_right = 290.0
+margin_bottom = 35.0
+custom_styles/focus = SubResource( 1 )
+custom_fonts/font = ExtResource( 9 )
+text = "Dracaufeu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon2" type="Button" parent="BGDown/Pokemon"]
+margin_top = 45.0
+margin_right = 290.0
+margin_bottom = 80.0
+custom_styles/focus = SubResource( 2 )
+custom_fonts/font = ExtResource( 9 )
+text = "Carapuce"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon3" type="Button" parent="BGDown/Pokemon"]
+margin_top = 90.0
+margin_right = 290.0
+margin_bottom = 125.0
+custom_styles/focus = SubResource( 3 )
+custom_fonts/font = ExtResource( 9 )
+text = "Salameche"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon4" type="Button" parent="BGDown/Pokemon"]
+margin_left = 310.0
+margin_right = 600.0
+margin_bottom = 35.0
+custom_styles/focus = SubResource( 4 )
+custom_fonts/font = ExtResource( 9 )
+text = "Salameche"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon5" type="Button" parent="BGDown/Pokemon"]
+margin_left = 310.0
+margin_top = 45.0
+margin_right = 600.0
+margin_bottom = 80.0
+custom_styles/focus = SubResource( 5 )
+custom_fonts/font = ExtResource( 9 )
+text = "Salameche"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon6" type="Button" parent="BGDown/Pokemon"]
+margin_left = 310.0
+margin_top = 90.0
+margin_right = 600.0
+margin_bottom = 125.0
+custom_styles/focus = SubResource( 6 )
+custom_fonts/font = ExtResource( 9 )
+text = "Salameche"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaques" type="Control" parent="BGDown"]
+visible = false
+margin_left = 570.577
+margin_top = 81.8433
+margin_right = 870.577
+margin_bottom = 181.843
+
+[node name="BG" type="ColorRect" parent="BGDown/Attaques"]
+margin_right = 300.0
+margin_bottom = 100.0
+color = Color( 0, 0.658824, 0.952941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque1" type="Button" parent="BGDown/Attaques"]
+margin_top = 10.0
+margin_right = 125.0
+margin_bottom = 46.0
+custom_styles/focus = SubResource( 7 )
+custom_fonts/font = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque2" type="Button" parent="BGDown/Attaques"]
+margin_top = 55.0
+margin_right = 125.0
+margin_bottom = 91.0
+custom_styles/focus = SubResource( 8 )
+custom_fonts/font = ExtResource( 7 )
+
+[node name="Attaque3" type="Button" parent="BGDown/Attaques"]
+margin_left = 150.0
+margin_top = 10.0
+margin_right = 275.0
+margin_bottom = 46.0
+custom_styles/focus = SubResource( 9 )
+custom_fonts/font = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque4" type="Button" parent="BGDown/Attaques"]
+margin_left = 150.0
+margin_top = 55.0
+margin_right = 275.0
+margin_bottom = 91.0
+custom_styles/focus = SubResource( 10 )
+custom_fonts/font = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConfirmButton" type="Button" parent="BGDown"]
+visible = false
+margin_left = 623.0
+margin_top = 186.0
+margin_right = 811.0
+margin_bottom = 241.0
+custom_fonts/font = ExtResource( 7 )
+text = "Remplacer ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Confirmation" type="AcceptDialog" parent="."]
+margin_left = 444.316
+margin_top = 211.073
+margin_right = 691.316
+margin_bottom = 317.073
+window_title = "Confirmation !"
+dialog_autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Outside" type="TextureButton" parent="."]
+margin_right = 64.0
+margin_bottom = 44.0
+texture_normal = ExtResource( 11 )
+texture_hover = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="BGDown/LearnButton" to="." method="_on_LearnButton_pressed"]
+[connection signal="pressed" from="BGDown/Pokemon/Pokemon1" to="." method="_on_Pokemon1_pressed"]
+[connection signal="pressed" from="BGDown/Pokemon/Pokemon2" to="." method="_on_Pokemon2_pressed"]
+[connection signal="pressed" from="BGDown/Pokemon/Pokemon3" to="." method="_on_Pokemon3_pressed"]
+[connection signal="pressed" from="BGDown/Pokemon/Pokemon4" to="." method="_on_Pokemon4_pressed"]
+[connection signal="pressed" from="BGDown/Pokemon/Pokemon5" to="." method="_on_Pokemon5_pressed"]
+[connection signal="pressed" from="BGDown/Pokemon/Pokemon6" to="." method="_on_Pokemon6_pressed"]
+[connection signal="pressed" from="BGDown/Attaques/Attaque1" to="." method="_on_Attaque1_pressed"]
+[connection signal="pressed" from="BGDown/Attaques/Attaque2" to="." method="_on_Attaque2_pressed"]
+[connection signal="pressed" from="BGDown/Attaques/Attaque3" to="." method="_on_Attaque3_pressed"]
+[connection signal="pressed" from="BGDown/Attaques/Attaque4" to="." method="_on_Attaque4_pressed"]
+[connection signal="pressed" from="BGDown/ConfirmButton" to="." method="_on_ConfirmButton_pressed"]
+[connection signal="pressed" from="Outside" to="." method="_on_Outside_pressed"]

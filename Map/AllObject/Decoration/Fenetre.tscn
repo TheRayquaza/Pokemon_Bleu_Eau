@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Map/AllObject/AnObject2.gd" type="Script" id=1]
+[ext_resource path="res://img Pokemon/img Map/Environnement/Texture Mur/Fenetre.png" type="Texture" id=2]
+
+[node name="Fenetre" type="Sprite"]
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

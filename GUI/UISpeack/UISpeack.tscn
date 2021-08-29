@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://GUI/UISpeack/UISpeack.gd" type="Script" id=1]
+[ext_resource path="res://Font/45Font.tres" type="DynamicFont" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Show_Text"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Text:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[node name="UISpeackPopUp" type="Popup"]
+margin_top = 420.0
+margin_right = 1026.0
+margin_bottom = 600.0
+popup_exclusive = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="ColorRect" parent="."]
+margin_right = 1026.0
+margin_bottom = 176.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BorderTop" type="ColorRect" parent="."]
+margin_right = 1026.0
+margin_bottom = 10.0
+color = Color( 0.352941, 0.658824, 0.929412, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BorderLeft" type="ColorRect" parent="."]
+margin_right = 10.0
+margin_bottom = 176.0
+color = Color( 0.352941, 0.658824, 0.929412, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BorderBottom" type="ColorRect" parent="."]
+margin_top = 166.0
+margin_right = 1026.0
+margin_bottom = 176.0
+color = Color( 0.352941, 0.658824, 0.929412, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BorderRight" type="ColorRect" parent="."]
+margin_left = 1016.0
+margin_right = 1026.0
+margin_bottom = 176.0
+color = Color( 0.352941, 0.658824, 0.929412, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="RichTextLabel" parent="."]
+anchor_left = -101.8
+anchor_right = -101.8
+margin_left = 104467.0
+margin_top = 18.0
+margin_right = 105450.0
+margin_bottom = 156.0
+custom_fonts/normal_font = ExtResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+visible_characters = 0
+percent_visible = 0.0
+meta_underlined = false
+tab_size = 2
+scroll_active = false
+override_selected_font_color = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Show_Text" type="AnimationPlayer" parent="."]
+anims/Show_Text = SubResource( 1 )

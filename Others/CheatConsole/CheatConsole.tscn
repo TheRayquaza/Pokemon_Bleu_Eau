@@ -1,0 +1,502 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Others/CheatConsole/CheatConsole.gd" type="Script" id=1]
+[ext_resource path="res://img Pokemon/img Shop/Object/RappelMax.png" type="Texture" id=2]
+[ext_resource path="res://img Pokemon/img Shop/Object/SuperPotion.png" type="Texture" id=3]
+[ext_resource path="res://img Pokemon/img Shop/Object/Potion.png" type="Texture" id=4]
+[ext_resource path="res://img Pokemon/img Shop/Object/HyperPotion.png" type="Texture" id=5]
+[ext_resource path="res://img Pokemon/img Shop/Object/Guerison.png" type="Texture" id=6]
+[ext_resource path="res://img Pokemon/img Shop/Object/Rappel.png" type="Texture" id=7]
+[ext_resource path="res://img Pokemon/img Shop/Object/Antidote.png" type="Texture" id=8]
+[ext_resource path="res://img Pokemon/img Shop/Object/AntiBrule.png" type="Texture" id=9]
+[ext_resource path="res://img Pokemon/img Shop/Object/TotalSoin.png" type="Texture" id=10]
+[ext_resource path="res://img Pokemon/img Shop/Object/Pokeball.png" type="Texture" id=11]
+[ext_resource path="res://img Pokemon/img Shop/Object/HyperBall.png" type="Texture" id=12]
+[ext_resource path="res://img Pokemon/img Shop/Object/SuperBall.png" type="Texture" id=13]
+[ext_resource path="res://img Pokemon/img Shop/Object/MasterBall.png" type="Texture" id=14]
+[ext_resource path="res://img Pokemon/img Shop/Object/Repousse.png" type="Texture" id=15]
+[ext_resource path="res://img Pokemon/img Shop/Object/SuperRepousse.png" type="Texture" id=16]
+[ext_resource path="res://Font/24Font.tres" type="DynamicFont" id=17]
+[ext_resource path="res://Font/20Font.tres" type="DynamicFont" id=18]
+[ext_resource path="res://img Pokemon/img CheatConsole/BG.png" type="Texture" id=19]
+
+[node name="CheatConsole" type="ColorRect"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 200.0
+margin_top = 150.0
+margin_right = -226.0
+margin_bottom = -150.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="."]
+margin_left = -9.0
+margin_top = -8.0
+margin_right = 610.0
+margin_bottom = 309.0
+texture = ExtResource( 19 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Position" type="Button" parent="."]
+margin_left = 16.0
+margin_top = 20.0
+margin_right = 216.0
+margin_bottom = 70.0
+text = "Modifier votre Position"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PositionPopup" type="Popup" parent="."]
+margin_left = 250.0
+margin_top = 20.0
+margin_right = 575.0
+margin_bottom = 245.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="ColorRect" parent="PositionPopup"]
+margin_right = 325.0
+margin_bottom = 225.0
+color = Color( 0.133333, 0.133333, 0.133333, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Origine" type="Button" parent="PositionPopup"]
+pause_mode = 2
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 160.0
+margin_bottom = 40.0
+text = "Revenir en (0,0)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Choix" type="Button" parent="PositionPopup"]
+pause_mode = 2
+margin_left = 10.0
+margin_top = 50.0
+margin_right = 160.0
+margin_bottom = 80.0
+text = "Choisir votre Position"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoixEdit" type="LineEdit" parent="PositionPopup"]
+margin_left = 165.0
+margin_top = 49.0
+margin_right = 315.0
+margin_bottom = 79.0
+placeholder_text = "x : 10.4"
+placeholder_alpha = 0.7
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoixEdit2" type="LineEdit" parent="PositionPopup"]
+margin_left = 165.0
+margin_top = 80.0
+margin_right = 315.0
+margin_bottom = 110.0
+placeholder_text = "y : -15.2"
+placeholder_alpha = 0.7
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ValiderChoix" type="Button" parent="PositionPopup"]
+margin_left = 165.0
+margin_top = 115.0
+margin_right = 315.0
+margin_bottom = 145.0
+text = "Valider ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Scene" type="Button" parent="PositionPopup"]
+pause_mode = 2
+margin_left = 10.0
+margin_top = 90.0
+margin_right = 160.0
+margin_bottom = 120.0
+text = "Changer de Scene"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Scenepopup" type="Popup" parent="PositionPopup"]
+margin_left = 166.0
+margin_right = 317.0
+margin_bottom = 225.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="ColorRect" parent="PositionPopup/Scenepopup"]
+margin_right = 151.0
+margin_bottom = 225.0
+color = Color( 0.439216, 0.439216, 0.439216, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartHouse" type="Button" parent="PositionPopup/Scenepopup"]
+margin_left = 10.0
+margin_right = 140.0
+margin_bottom = 20.0
+text = "StartHouse"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LaboChen" type="Button" parent="PositionPopup/Scenepopup"]
+margin_left = 10.0
+margin_top = 25.0
+margin_right = 142.0
+margin_bottom = 45.0
+text = "Laboratoire Chen"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PokemonCenterJadielle" type="Button" parent="PositionPopup/Scenepopup"]
+margin_left = 10.0
+margin_top = 50.0
+margin_right = 140.0
+margin_bottom = 70.0
+text = "Center Jadielle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PokemonCenterArgenta" type="Button" parent="PositionPopup/Scenepopup"]
+margin_left = 10.0
+margin_top = 75.0
+margin_right = 140.0
+margin_bottom = 95.0
+text = "Center Argenta"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShopJadielle" type="Button" parent="PositionPopup/Scenepopup"]
+margin_left = 10.0
+margin_top = 100.0
+margin_right = 140.0
+margin_bottom = 120.0
+text = "Shop Jadielle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShopArgenta" type="Button" parent="PositionPopup/Scenepopup"]
+margin_left = 10.0
+margin_top = 125.0
+margin_right = 140.0
+margin_bottom = 145.0
+text = "Shop Argenta"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Musee" type="Button" parent="PositionPopup/Scenepopup"]
+margin_left = 10.0
+margin_top = 150.0
+margin_right = 140.0
+margin_bottom = 170.0
+text = "Musee"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ForetJade" type="Button" parent="PositionPopup/Scenepopup"]
+margin_left = 10.0
+margin_top = 175.0
+margin_right = 140.0
+margin_bottom = 195.0
+text = "Foret de Jade"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Objets" type="Button" parent="."]
+margin_left = 16.0
+margin_top = 80.0
+margin_right = 216.0
+margin_bottom = 130.0
+text = "Objets"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ObjetsPopup" type="Popup" parent="."]
+margin_left = 250.0
+margin_top = 20.0
+margin_right = 575.0
+margin_bottom = 245.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="ColorRect" parent="ObjetsPopup"]
+margin_left = 0.174866
+margin_right = 325.175
+margin_bottom = 225.0
+color = Color( 0.133333, 0.133333, 0.133333, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Potion" type="Button" parent="ObjetsPopup"]
+margin_right = 52.0
+margin_bottom = 46.0
+icon = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SuperPotion" type="Button" parent="ObjetsPopup"]
+margin_top = 50.0
+margin_right = 52.0
+margin_bottom = 96.0
+icon = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HyperPotion" type="Button" parent="ObjetsPopup"]
+margin_top = 101.0
+margin_right = 52.0
+margin_bottom = 147.0
+icon = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Guerison" type="Button" parent="ObjetsPopup"]
+margin_top = 152.0
+margin_right = 52.0
+margin_bottom = 198.0
+icon = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rappel" type="Button" parent="ObjetsPopup"]
+margin_left = 56.0
+margin_right = 108.0
+margin_bottom = 46.0
+icon = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RappelMax" type="Button" parent="ObjetsPopup"]
+margin_left = 56.0
+margin_top = 50.0
+margin_right = 108.0
+margin_bottom = 96.0
+icon = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Antidote" type="Button" parent="ObjetsPopup"]
+margin_left = 56.0
+margin_top = 101.0
+margin_right = 108.0
+margin_bottom = 147.0
+icon = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AntiBrule" type="Button" parent="ObjetsPopup"]
+margin_left = 56.0
+margin_top = 151.0
+margin_right = 108.0
+margin_bottom = 197.0
+icon = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TotalSoin" type="Button" parent="ObjetsPopup"]
+margin_left = 112.0
+margin_right = 164.0
+margin_bottom = 46.0
+icon = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokeball" type="Button" parent="ObjetsPopup"]
+margin_left = 168.0
+margin_right = 220.0
+margin_bottom = 46.0
+icon = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SuperBall" type="Button" parent="ObjetsPopup"]
+margin_left = 167.0
+margin_top = 50.0
+margin_right = 219.0
+margin_bottom = 96.0
+icon = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HyperBall" type="Button" parent="ObjetsPopup"]
+margin_left = 167.0
+margin_top = 100.0
+margin_right = 219.0
+margin_bottom = 146.0
+icon = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MasterBall" type="Button" parent="ObjetsPopup"]
+margin_left = 167.0
+margin_top = 151.0
+margin_right = 219.0
+margin_bottom = 197.0
+icon = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Repousse" type="Button" parent="ObjetsPopup"]
+margin_left = 225.0
+margin_right = 277.0
+margin_bottom = 46.0
+icon = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SuperRepousse" type="Button" parent="ObjetsPopup"]
+margin_left = 225.0
+margin_top = 50.0
+margin_right = 277.0
+margin_bottom = 96.0
+icon = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="ObjetsPopup"]
+margin_left = 96.3144
+margin_top = 205.917
+margin_right = 226.314
+margin_bottom = 235.917
+placeholder_text = "Exemple : 151"
+
+[node name="Argent" type="Button" parent="."]
+margin_left = 16.0
+margin_top = 140.0
+margin_right = 216.0
+margin_bottom = 190.0
+text = "Ajouter de l'Argent"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArgentPopup" type="Popup" parent="."]
+visible = true
+margin_left = 250.0
+margin_top = 20.0
+margin_right = 575.0
+margin_bottom = 245.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="ColorRect" parent="ArgentPopup"]
+margin_right = 325.0
+margin_bottom = 225.0
+color = Color( 0.133333, 0.133333, 0.133333, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArgentAdd" type="LineEdit" parent="ArgentPopup"]
+margin_left = 32.5
+margin_top = 100.0
+margin_right = 292.5
+margin_bottom = 150.0
+custom_fonts/font = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ArgentPopup"]
+margin_left = 25.9851
+margin_top = 68.702
+margin_right = 302.985
+margin_bottom = 93.702
+custom_fonts/font = ExtResource( 17 )
+text = "AJOUTER DE L'ARGENT ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Valider" type="Button" parent="ArgentPopup"]
+margin_left = 87.0
+margin_top = 160.0
+margin_right = 235.0
+margin_bottom = 197.0
+text = "VALIDER ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Position" to="." method="_on_Position_pressed"]
+[connection signal="pressed" from="PositionPopup/Origine" to="." method="_on_Origine_pressed"]
+[connection signal="pressed" from="PositionPopup/Choix" to="." method="_on_Choix_pressed"]
+[connection signal="text_changed" from="PositionPopup/ChoixEdit" to="." method="_on_ChoixEdit_text_changed"]
+[connection signal="text_changed" from="PositionPopup/ChoixEdit2" to="." method="_on_ChoixEdit2_text_changed"]
+[connection signal="pressed" from="PositionPopup/ValiderChoix" to="." method="_on_ValiderChoix_pressed"]
+[connection signal="pressed" from="PositionPopup/Scene" to="." method="_on_Scene_pressed"]
+[connection signal="pressed" from="PositionPopup/Scenepopup/StartHouse" to="." method="_on_StartHouse_pressed"]
+[connection signal="pressed" from="PositionPopup/Scenepopup/LaboChen" to="." method="_on_LaboChen_pressed"]
+[connection signal="pressed" from="PositionPopup/Scenepopup/PokemonCenterJadielle" to="." method="_on_PokemonCenterJadielle_pressed"]
+[connection signal="pressed" from="PositionPopup/Scenepopup/PokemonCenterArgenta" to="." method="_on_PokemonCenterArgenta_pressed"]
+[connection signal="pressed" from="PositionPopup/Scenepopup/ShopJadielle" to="." method="_on_ShopJadielle_pressed"]
+[connection signal="pressed" from="PositionPopup/Scenepopup/ShopArgenta" to="." method="_on_ShopArgenta_pressed"]
+[connection signal="pressed" from="PositionPopup/Scenepopup/Musee" to="." method="_on_Musee_pressed"]
+[connection signal="pressed" from="PositionPopup/Scenepopup/ForetJade" to="." method="_on_ForetJade_pressed"]
+[connection signal="pressed" from="Objets" to="." method="_on_Objets_pressed"]
+[connection signal="pressed" from="ObjetsPopup/Potion" to="." method="_on_Potion_pressed"]
+[connection signal="pressed" from="ObjetsPopup/SuperPotion" to="." method="_on_SuperPotion_pressed"]
+[connection signal="pressed" from="ObjetsPopup/HyperPotion" to="." method="_on_HyperPotion_pressed"]
+[connection signal="pressed" from="ObjetsPopup/Guerison" to="." method="_on_Guerison_pressed"]
+[connection signal="pressed" from="ObjetsPopup/Rappel" to="." method="_on_Rappel_pressed"]
+[connection signal="pressed" from="ObjetsPopup/RappelMax" to="." method="_on_RappelMax_pressed"]
+[connection signal="pressed" from="ObjetsPopup/Antidote" to="." method="_on_Antidote_pressed"]
+[connection signal="pressed" from="ObjetsPopup/AntiBrule" to="." method="_on_AntiBrule_pressed"]
+[connection signal="pressed" from="ObjetsPopup/TotalSoin" to="." method="_on_TotalSoin_pressed"]
+[connection signal="pressed" from="ObjetsPopup/Pokeball" to="." method="_on_Pokeball_pressed"]
+[connection signal="pressed" from="ObjetsPopup/SuperBall" to="." method="_on_SuperBall_pressed"]
+[connection signal="pressed" from="ObjetsPopup/HyperBall" to="." method="_on_HyperBall_pressed"]
+[connection signal="pressed" from="ObjetsPopup/MasterBall" to="." method="_on_MasterBall_pressed"]
+[connection signal="pressed" from="ObjetsPopup/Repousse" to="." method="_on_Repousse_pressed"]
+[connection signal="pressed" from="ObjetsPopup/SuperRepousse" to="." method="_on_SuperRepousse_pressed"]
+[connection signal="text_entered" from="ObjetsPopup/LineEdit" to="." method="_on_LineEdit_text_entered"]
+[connection signal="pressed" from="Argent" to="." method="_on_Argent_pressed"]
+[connection signal="pressed" from="ArgentPopup/Valider" to="." method="_on_Valider_pressed"]

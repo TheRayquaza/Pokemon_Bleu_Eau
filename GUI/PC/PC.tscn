@@ -1,0 +1,3263 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://GUI/PC/PC.gd" type="Script" id=1]
+[ext_resource path="res://img Pokemon/img Pokedex/Graphic/ChoixTexture.png" type="Texture" id=2]
+[ext_resource path="res://img Pokemon/img PC/ListePokemons/BoxPCPokemon.png" type="Texture" id=3]
+[ext_resource path="res://Font/45Font.tres" type="DynamicFont" id=4]
+[ext_resource path="res://img Pokemon/All Pokemon/Front/1.png" type="Texture" id=5]
+[ext_resource path="res://img Pokemon/img Pokedex/Graphic/cadre.png" type="Texture" id=6]
+[ext_resource path="res://Font/20Font.tres" type="DynamicFont" id=7]
+[ext_resource path="res://img Pokemon/All Pokemon/Front/2.png" type="Texture" id=8]
+[ext_resource path="res://img Pokemon/All Pokemon/Front/3.png" type="Texture" id=9]
+[ext_resource path="res://img Pokemon/All Pokemon/Front/4.png" type="Texture" id=10]
+[ext_resource path="res://img Pokemon/img PC/Donnee/DonneePokemonChoisis.png" type="Texture" id=11]
+[ext_resource path="res://img Pokemon/img PC/VosPokemons/VosPokemonBox.png" type="Texture" id=12]
+[ext_resource path="res://img Pokemon/img Pokedex/Graphic/ChoixTextureEntre.png" type="Texture" id=13]
+[ext_resource path="res://img Pokemon/All Pokemon/Overworld/2.png" type="Texture" id=14]
+[ext_resource path="res://img Pokemon/All Pokemon/Overworld/18.png" type="Texture" id=15]
+[ext_resource path="res://img Pokemon/All Pokemon/Overworld/1.png" type="Texture" id=16]
+[ext_resource path="res://img Pokemon/All Pokemon/Overworld/6.png" type="Texture" id=17]
+[ext_resource path="res://img Pokemon/All Pokemon/Overworld/15.png" type="Texture" id=18]
+[ext_resource path="res://img Pokemon/img PC/VosPokemons/case.png" type="Texture" id=19]
+[ext_resource path="res://img Pokemon/img PC/Others/ExpBoxProgress.png" type="Texture" id=20]
+[ext_resource path="res://img Pokemon/img PC/Others/TextureProgress-Green.png" type="Texture" id=21]
+[ext_resource path="res://Font/Font.tres" type="DynamicFont" id=22]
+[ext_resource path="res://img Pokemon/All Type/Eau.png" type="Texture" id=23]
+[ext_resource path="res://img Pokemon/img PC/Graphics/Details.png" type="Texture" id=24]
+[ext_resource path="res://img Pokemon/img PC/Donnee/StatsBox.png" type="Texture" id=25]
+[ext_resource path="res://img Pokemon/img PC/Graphics/DonneeButton.png" type="Texture" id=26]
+[ext_resource path="res://img Pokemon/img Pokedex/Graphic/OutsideButton2.png" type="Texture" id=27]
+[ext_resource path="res://img Pokemon/img Pokedex/Graphic/OutsideButton.png" type="Texture" id=28]
+[ext_resource path="res://img Pokemon/img PC/VosPokemons/case-focused.png" type="Texture" id=29]
+[ext_resource path="res://Class/TextureButtonClassPC.gd" type="Script" id=30]
+[ext_resource path="res://img Pokemon/img PC/Graphics/Modifier.png" type="Texture" id=31]
+
+[node name="PC-GUI" type="ColorRect"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0.470588, 0.972549, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Graphic" type="Control" parent="."]
+margin_right = 1026.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Graphic"]
+margin_right = 1026.0
+margin_bottom = 60.0
+color = Color( 0.972549, 0.941176, 0.847059, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Graphic"]
+margin_top = 540.0
+margin_right = 1026.0
+margin_bottom = 600.0
+color = Color( 0.972549, 0.941176, 0.847059, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VosPokemons" type="Label" parent="Graphic"]
+margin_left = 348.558
+margin_top = 6.56802
+margin_right = 668.558
+margin_bottom = 51.568
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Vos Pokemons"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlChoix" type="Label" parent="Graphic"]
+margin_left = 892.265
+margin_top = 547.22
+margin_right = 1009.26
+margin_bottom = 592.22
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "CHOIX"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlSelect" type="Label" parent="Graphic"]
+margin_left = 671.741
+margin_top = 547.22
+margin_right = 843.741
+margin_bottom = 592.22
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "SELECT."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlChoixTexture" type="TextureRect" parent="Graphic"]
+margin_left = 853.427
+margin_top = 552.448
+margin_right = 890.427
+margin_bottom = 589.448
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlSelectTexture" type="TextureRect" parent="Graphic"]
+margin_left = 625.743
+margin_top = 551.016
+margin_right = 662.743
+margin_bottom = 588.016
+texture = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BoxPokemon" type="TextureRect" parent="Graphic"]
+margin_left = 411.0
+margin_top = 82.0
+margin_right = 1026.0
+margin_bottom = 532.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ImageInfo" type="TextureRect" parent="Graphic"]
+margin_left = -0.474396
+margin_top = 312.303
+margin_right = 202.526
+margin_bottom = 526.303
+texture = ExtResource( 26 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PokemonImage" type="TextureRect" parent="Graphic/ImageInfo"]
+margin_left = 2.0
+margin_right = 68.0
+margin_bottom = 71.0
+rect_scale = Vector2( 3, 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Details" type="TextureButton" parent="Graphic"]
+margin_left = 197.764
+margin_top = 378.738
+margin_right = 412.764
+margin_bottom = 456.738
+texture_normal = ExtResource( 24 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stats" type="Label" parent="Graphic/Details"]
+margin_left = 82.5835
+margin_top = 23.7738
+margin_right = 199.584
+margin_bottom = 56.7738
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Stats"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Modifier" type="TextureButton" parent="Graphic"]
+margin_left = 391.0
+margin_top = 538.0
+margin_right = 606.0
+margin_bottom = 602.0
+texture_normal = ExtResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Graphic/Modifier"]
+margin_left = 47.8947
+margin_top = 15.5263
+margin_right = 170.895
+margin_bottom = 48.5263
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Modifier"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AllPokemon" type="ScrollContainer" parent="."]
+margin_left = 412.0
+margin_top = 99.0
+margin_right = 1024.0
+margin_bottom = 510.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllPokemon"]
+margin_right = 612.0
+margin_bottom = 2306.0
+
+[node name="1" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_right = 612.0
+margin_bottom = 150.0
+
+[node name="Pokemon1" type="Control" parent="AllPokemon/VBoxContainer/1"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/1/Pokemon1"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DictionnaryToLoad = "PC.Pokemon1"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/1/Pokemon1"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/1/Pokemon1"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon2" type="Control" parent="AllPokemon/VBoxContainer/1"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/1/Pokemon2"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon2"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/1/Pokemon2"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/1/Pokemon2"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon3" type="Control" parent="AllPokemon/VBoxContainer/1"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/1/Pokemon3"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon3"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/1/Pokemon3"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/1/Pokemon3"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon4" type="Control" parent="AllPokemon/VBoxContainer/1"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/1/Pokemon4"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon4"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/1/Pokemon4"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/1/Pokemon4"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 154.0
+margin_right = 612.0
+margin_bottom = 304.0
+
+[node name="Pokemon5" type="Control" parent="AllPokemon/VBoxContainer/2"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/2/Pokemon5"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DictionnaryToLoad = "PC.Pokemon5"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/2/Pokemon5"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/2/Pokemon5"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon6" type="Control" parent="AllPokemon/VBoxContainer/2"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/2/Pokemon6"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon6"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/2/Pokemon6"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/2/Pokemon6"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon7" type="Control" parent="AllPokemon/VBoxContainer/2"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/2/Pokemon7"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DictionnaryToLoad = "PC.Pokemon7"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/2/Pokemon7"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/2/Pokemon7"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon8" type="Control" parent="AllPokemon/VBoxContainer/2"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/2/Pokemon8"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon8"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/2/Pokemon8"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/2/Pokemon8"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 308.0
+margin_right = 612.0
+margin_bottom = 458.0
+
+[node name="Pokemon9" type="Control" parent="AllPokemon/VBoxContainer/3"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/3/Pokemon9"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon9"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/3/Pokemon9"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/3/Pokemon9"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon10" type="Control" parent="AllPokemon/VBoxContainer/3"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/3/Pokemon10"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon10"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/3/Pokemon10"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/3/Pokemon10"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon11" type="Control" parent="AllPokemon/VBoxContainer/3"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/3/Pokemon11"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon11"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/3/Pokemon11"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/3/Pokemon11"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon12" type="Control" parent="AllPokemon/VBoxContainer/3"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/3/Pokemon12"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DictionnaryToLoad = "PC.Pokemon12"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/3/Pokemon12"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/3/Pokemon12"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 462.0
+margin_right = 612.0
+margin_bottom = 612.0
+
+[node name="Pokemon13" type="Control" parent="AllPokemon/VBoxContainer/4"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/4/Pokemon13"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon13"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/4/Pokemon13"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/4/Pokemon13"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon14" type="Control" parent="AllPokemon/VBoxContainer/4"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/4/Pokemon14"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon14"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/4/Pokemon14"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/4/Pokemon14"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon15" type="Control" parent="AllPokemon/VBoxContainer/4"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/4/Pokemon15"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DictionnaryToLoad = "PC.Pokemon15"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/4/Pokemon15"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/4/Pokemon15"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon16" type="Control" parent="AllPokemon/VBoxContainer/4"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/4/Pokemon16"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon16"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/4/Pokemon16"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/4/Pokemon16"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="5" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 616.0
+margin_right = 612.0
+margin_bottom = 766.0
+
+[node name="Pokemon17" type="Control" parent="AllPokemon/VBoxContainer/5"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/5/Pokemon17"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DictionnaryToLoad = "PC.Pokemon17"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/5/Pokemon17"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/5/Pokemon17"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon18" type="Control" parent="AllPokemon/VBoxContainer/5"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/5/Pokemon18"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon18"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/5/Pokemon18"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/5/Pokemon18"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon19" type="Control" parent="AllPokemon/VBoxContainer/5"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/5/Pokemon19"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon19"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/5/Pokemon19"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/5/Pokemon19"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon20" type="Control" parent="AllPokemon/VBoxContainer/5"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/5/Pokemon20"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon20"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/5/Pokemon20"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/5/Pokemon20"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 770.0
+margin_right = 612.0
+margin_bottom = 920.0
+
+[node name="Pokemon21" type="Control" parent="AllPokemon/VBoxContainer/6"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/6/Pokemon21"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DictionnaryToLoad = "PC.Pokemon21"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/6/Pokemon21"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/6/Pokemon21"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon22" type="Control" parent="AllPokemon/VBoxContainer/6"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/6/Pokemon22"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon22"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/6/Pokemon22"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/6/Pokemon22"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon23" type="Control" parent="AllPokemon/VBoxContainer/6"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/6/Pokemon23"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon23"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/6/Pokemon23"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/6/Pokemon23"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon24" type="Control" parent="AllPokemon/VBoxContainer/6"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/6/Pokemon24"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon24"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/6/Pokemon24"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/6/Pokemon24"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="7" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 924.0
+margin_right = 612.0
+margin_bottom = 1074.0
+
+[node name="Pokemon25" type="Control" parent="AllPokemon/VBoxContainer/7"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/7/Pokemon25"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon25"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/7/Pokemon25"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/7/Pokemon25"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon26" type="Control" parent="AllPokemon/VBoxContainer/7"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/7/Pokemon26"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon26"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/7/Pokemon26"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/7/Pokemon26"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon27" type="Control" parent="AllPokemon/VBoxContainer/7"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/7/Pokemon27"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon27"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/7/Pokemon27"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/7/Pokemon27"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon28" type="Control" parent="AllPokemon/VBoxContainer/7"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/7/Pokemon28"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon28"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/7/Pokemon28"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/7/Pokemon28"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="8" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 1078.0
+margin_right = 612.0
+margin_bottom = 1228.0
+
+[node name="Pokemon29" type="Control" parent="AllPokemon/VBoxContainer/8"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/8/Pokemon29"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon29"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/8/Pokemon29"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/8/Pokemon29"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon30" type="Control" parent="AllPokemon/VBoxContainer/8"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/8/Pokemon30"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon30"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/8/Pokemon30"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/8/Pokemon30"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon31" type="Control" parent="AllPokemon/VBoxContainer/8"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/8/Pokemon31"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon31"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/8/Pokemon31"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/8/Pokemon31"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon32" type="Control" parent="AllPokemon/VBoxContainer/8"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/8/Pokemon32"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon32"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/8/Pokemon32"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/8/Pokemon32"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="9" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 1232.0
+margin_right = 612.0
+margin_bottom = 1382.0
+
+[node name="Pokemon33" type="Control" parent="AllPokemon/VBoxContainer/9"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/9/Pokemon33"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon33"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/9/Pokemon33"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/9/Pokemon33"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon34" type="Control" parent="AllPokemon/VBoxContainer/9"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/9/Pokemon34"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon34"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/9/Pokemon34"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/9/Pokemon34"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon35" type="Control" parent="AllPokemon/VBoxContainer/9"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/9/Pokemon35"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon35"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/9/Pokemon35"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/9/Pokemon35"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon36" type="Control" parent="AllPokemon/VBoxContainer/9"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/9/Pokemon36"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon36"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/9/Pokemon36"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/9/Pokemon36"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="10" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 1386.0
+margin_right = 612.0
+margin_bottom = 1536.0
+
+[node name="Pokemon37" type="Control" parent="AllPokemon/VBoxContainer/10"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/10/Pokemon37"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DictionnaryToLoad = "PC.Pokemon37"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/10/Pokemon37"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/10/Pokemon37"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon38" type="Control" parent="AllPokemon/VBoxContainer/10"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/10/Pokemon38"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon38"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/10/Pokemon38"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/10/Pokemon38"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon39" type="Control" parent="AllPokemon/VBoxContainer/10"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/10/Pokemon39"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon39"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/10/Pokemon39"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/10/Pokemon39"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon40" type="Control" parent="AllPokemon/VBoxContainer/10"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/10/Pokemon40"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon40"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/10/Pokemon40"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/10/Pokemon40"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="11" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 1540.0
+margin_right = 612.0
+margin_bottom = 1690.0
+
+[node name="Pokemon41" type="Control" parent="AllPokemon/VBoxContainer/11"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/11/Pokemon41"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon41"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/11/Pokemon41"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/11/Pokemon41"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon42" type="Control" parent="AllPokemon/VBoxContainer/11"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/11/Pokemon42"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon42"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/11/Pokemon42"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/11/Pokemon42"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon43" type="Control" parent="AllPokemon/VBoxContainer/11"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/11/Pokemon43"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon43"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/11/Pokemon43"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/11/Pokemon43"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon44" type="Control" parent="AllPokemon/VBoxContainer/11"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/11/Pokemon44"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon44"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/11/Pokemon44"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/11/Pokemon44"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="12" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 1694.0
+margin_right = 612.0
+margin_bottom = 1844.0
+
+[node name="Pokemon45" type="Control" parent="AllPokemon/VBoxContainer/12"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/12/Pokemon45"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon45"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/12/Pokemon45"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/12/Pokemon45"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon46" type="Control" parent="AllPokemon/VBoxContainer/12"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/12/Pokemon46"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon46"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/12/Pokemon46"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/12/Pokemon46"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon47" type="Control" parent="AllPokemon/VBoxContainer/12"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/12/Pokemon47"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon47"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/12/Pokemon47"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/12/Pokemon47"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon48" type="Control" parent="AllPokemon/VBoxContainer/12"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/12/Pokemon48"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon48"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/12/Pokemon48"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/12/Pokemon48"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="13" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 1848.0
+margin_right = 612.0
+margin_bottom = 1998.0
+
+[node name="Pokemon49" type="Control" parent="AllPokemon/VBoxContainer/13"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/13/Pokemon49"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon49"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/13/Pokemon49"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/13/Pokemon49"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon50" type="Control" parent="AllPokemon/VBoxContainer/13"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/13/Pokemon50"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon50"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/13/Pokemon50"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/13/Pokemon50"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon51" type="Control" parent="AllPokemon/VBoxContainer/13"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/13/Pokemon51"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DictionnaryToLoad = "PC.Pokemon51"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/13/Pokemon51"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/13/Pokemon51"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon52" type="Control" parent="AllPokemon/VBoxContainer/13"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/13/Pokemon52"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon52"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/13/Pokemon52"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/13/Pokemon52"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="14" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 2002.0
+margin_right = 612.0
+margin_bottom = 2152.0
+
+[node name="Pokemon53" type="Control" parent="AllPokemon/VBoxContainer/14"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/14/Pokemon53"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon53"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/14/Pokemon53"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/14/Pokemon53"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon54" type="Control" parent="AllPokemon/VBoxContainer/14"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/14/Pokemon54"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon54"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/14/Pokemon54"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/14/Pokemon54"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon55" type="Control" parent="AllPokemon/VBoxContainer/14"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/14/Pokemon55"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon55"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/14/Pokemon55"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/14/Pokemon55"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon56" type="Control" parent="AllPokemon/VBoxContainer/14"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/14/Pokemon56"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon56"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/14/Pokemon56"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/14/Pokemon56"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="15" type="HBoxContainer" parent="AllPokemon/VBoxContainer"]
+margin_top = 2156.0
+margin_right = 612.0
+margin_bottom = 2306.0
+
+[node name="Pokemon57" type="Control" parent="AllPokemon/VBoxContainer/15"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/15/Pokemon57"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon57"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/15/Pokemon57"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 124.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/15/Pokemon57"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "BULBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon58" type="Control" parent="AllPokemon/VBoxContainer/15"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/15/Pokemon58"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon58"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/15/Pokemon58"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 120.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/15/Pokemon58"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HERBIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon59" type="Control" parent="AllPokemon/VBoxContainer/15"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/15/Pokemon59"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 9 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon59"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/15/Pokemon59"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.45"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/15/Pokemon59"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FLORIZARRE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon60" type="Control" parent="AllPokemon/VBoxContainer/15"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+
+[node name="Image" type="TextureButton" parent="AllPokemon/VBoxContainer/15/Pokemon60"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 6 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PC.Pokemon60"
+
+[node name="Lvl" type="Label" parent="AllPokemon/VBoxContainer/15/Pokemon60"]
+margin_left = 90.0
+margin_top = 22.0
+margin_right = 132.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N.10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="AllPokemon/VBoxContainer/15/Pokemon60"]
+margin_left = 10.0
+margin_top = 126.0
+margin_right = 120.0
+margin_bottom = 146.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SALAMECHE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VosPokemons" type="TextureRect" parent="."]
+margin_top = 79.0
+margin_right = 400.0
+margin_bottom = 299.0
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon1" type="TextureButton" parent="VosPokemons"]
+margin_left = 24.0065
+margin_top = 24.8639
+margin_right = 126.007
+margin_bottom = 104.864
+texture_normal = ExtResource( 19 )
+texture_focused = ExtResource( 29 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DictionnaryToLoad = "PG.Pokemon1"
+
+[node name="Pokemon1" type="TextureRect" parent="VosPokemons/Pokemon1" groups=[
+"VosPokemons",
+]]
+margin_left = 5.9935
+margin_top = 7.13614
+margin_right = 105.993
+margin_bottom = 97.1361
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon2" type="TextureButton" parent="VosPokemons"]
+margin_left = 149.183
+margin_top = 26.5786
+margin_right = 251.183
+margin_bottom = 106.579
+texture_normal = ExtResource( 19 )
+texture_focused = ExtResource( 29 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PG.Pokemon2"
+
+[node name="Pokemon2" type="TextureRect" parent="VosPokemons/Pokemon2" groups=[
+"VosPokemons",
+]]
+anchor_top = -8.66977e-09
+margin_left = 4.81808
+margin_top = 5.42616
+margin_right = 74.8181
+margin_bottom = 75.4262
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon3" type="TextureButton" parent="VosPokemons"]
+margin_left = 275.217
+margin_top = 25.7213
+margin_right = 377.217
+margin_bottom = 105.721
+texture_normal = ExtResource( 19 )
+texture_focused = ExtResource( 29 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PG.Pokemon3"
+
+[node name="Pokemon3" type="TextureRect" parent="VosPokemons/Pokemon3" groups=[
+"VosPokemons",
+]]
+margin_left = 4.78253
+margin_top = 6.27875
+margin_right = 104.783
+margin_bottom = 86.2787
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon4" type="TextureButton" parent="VosPokemons"]
+margin_left = 24.8639
+margin_top = 110.601
+margin_right = 126.864
+margin_bottom = 190.601
+texture_normal = ExtResource( 19 )
+texture_focused = ExtResource( 29 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PG.Pokemon4"
+
+[node name="Pokemon4" type="TextureRect" parent="VosPokemons/Pokemon4" groups=[
+"VosPokemons",
+]]
+margin_left = 4.13611
+margin_top = 7.39859
+margin_right = 104.136
+margin_bottom = 89.3986
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon5" type="TextureButton" parent="VosPokemons"]
+margin_left = 149.183
+margin_top = 111.459
+margin_right = 251.183
+margin_bottom = 191.459
+texture_normal = ExtResource( 19 )
+texture_focused = ExtResource( 29 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PG.Pokemon5"
+
+[node name="Pokemon5" type="TextureRect" parent="VosPokemons/Pokemon5" groups=[
+"VosPokemons",
+]]
+margin_left = 5.02228
+margin_top = 5.95236
+margin_right = 57.0223
+margin_bottom = 61.9524
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokemon6" type="TextureButton" parent="VosPokemons"]
+margin_left = 273.503
+margin_top = 111.459
+margin_right = 375.503
+margin_bottom = 191.459
+texture_normal = ExtResource( 19 )
+texture_focused = ExtResource( 29 )
+script = ExtResource( 30 )
+DictionnaryToLoad = "PG.Pokemon6"
+
+[node name="Pokemon6" type="TextureRect" parent="VosPokemons/Pokemon6" groups=[
+"VosPokemons",
+]]
+margin_left = 6.49731
+margin_top = 6.54123
+margin_right = 58.4973
+margin_bottom = 62.5412
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Donnee" type="Popup" parent="."]
+margin_left = 63.0
+margin_top = 100.0
+margin_right = 963.0
+margin_bottom = 516.0
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="Donnee"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Numero" type="Label" parent="Donnee"]
+margin_left = 178.0
+margin_top = 15.7
+margin_right = 235.0
+margin_bottom = 48.7
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "001"
+
+[node name="Name" type="Label" parent="Donnee"]
+margin_left = 178.0
+margin_top = 58.858
+margin_right = 254.0
+margin_bottom = 91.858
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "lol"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Type1" type="TextureRect" parent="Donnee"]
+margin_left = 200.0
+margin_top = 100.0
+margin_right = 232.0
+margin_bottom = 112.0
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Type2" type="TextureRect" parent="Donnee"]
+margin_left = 300.0
+margin_top = 100.0
+margin_right = 332.0
+margin_bottom = 112.0
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HpLabel" type="Label" parent="Donnee"]
+margin_left = 311.954
+margin_top = 143.942
+margin_right = 438.954
+margin_bottom = 176.942
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "150/500"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hp" type="TextureProgress" parent="Donnee"]
+margin_left = 213.068
+margin_top = 189.796
+margin_right = 434.068
+margin_bottom = 207.796
+texture_progress = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LvlLabel" type="Label" parent="Donnee"]
+margin_left = 178.0
+margin_top = 227.0
+margin_right = 280.0
+margin_bottom = 260.0
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "NV. 08"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lvl" type="TextureProgress" parent="Donnee"]
+margin_left = 122.961
+margin_top = 276.961
+margin_right = 432.961
+margin_bottom = 286.961
+texture_progress = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TypeAttaque1" type="TextureRect" parent="Donnee"]
+margin_left = 465.0
+margin_top = 12.818
+margin_right = 497.0
+margin_bottom = 24.818
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque1" type="Label" parent="Donnee"]
+margin_left = 580.0
+margin_top = 20.0
+margin_right = 878.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CHARGE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque1PP" type="Label" parent="Donnee"]
+margin_left = 770.0
+margin_top = 50.0
+margin_right = 859.0
+margin_bottom = 83.0
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15/15"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TypeAttaque2" type="TextureRect" parent="Donnee"]
+margin_left = 465.0
+margin_top = 93.818
+margin_right = 497.0
+margin_bottom = 105.818
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque2" type="Label" parent="Donnee"]
+margin_left = 580.0
+margin_top = 100.0
+margin_right = 878.0
+margin_bottom = 133.0
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CHARGE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque2PP" type="Label" parent="Donnee"]
+margin_left = 770.0
+margin_top = 130.0
+margin_right = 859.0
+margin_bottom = 163.0
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15/15"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TypeAttaque3" type="TextureRect" parent="Donnee"]
+margin_left = 465.0
+margin_top = 173.0
+margin_right = 497.0
+margin_bottom = 185.0
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque3" type="Label" parent="Donnee"]
+margin_left = 580.0
+margin_top = 180.0
+margin_right = 878.0
+margin_bottom = 213.0
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CHARGE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque3PP" type="Label" parent="Donnee"]
+margin_left = 770.0
+margin_top = 210.0
+margin_right = 859.0
+margin_bottom = 243.0
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15/15"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TypeAttaque4" type="TextureRect" parent="Donnee"]
+margin_left = 465.0
+margin_top = 252.0
+margin_right = 497.0
+margin_bottom = 264.0
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque4" type="Label" parent="Donnee"]
+margin_left = 580.0
+margin_top = 260.0
+margin_right = 878.0
+margin_bottom = 293.0
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CHARGE"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attaque4PP" type="Label" parent="Donnee"]
+margin_left = 770.0
+margin_top = 290.0
+margin_right = 859.0
+margin_bottom = 323.0
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "15/15"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stats" type="TextureButton" parent="Donnee"]
+margin_left = 209.0
+margin_top = 321.0
+margin_right = 424.0
+margin_bottom = 399.0
+texture_normal = ExtResource( 24 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stats" type="Label" parent="Donnee/Stats"]
+margin_left = 82.5835
+margin_top = 23.7738
+margin_right = 199.584
+margin_bottom = 56.7738
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Stats"
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeaveDetails" type="TextureButton" parent="Donnee"]
+margin_left = 798.831
+margin_top = 347.907
+margin_right = 892.831
+margin_bottom = 407.907
+texture_normal = ExtResource( 27 )
+texture_hover = ExtResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stats" type="Popup" parent="."]
+margin_left = 486.256
+margin_top = 295.67
+margin_right = 966.256
+margin_bottom = 505.67
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="Stats"]
+margin_right = 478.0
+margin_bottom = 210.0
+texture = ExtResource( 25 )
+
+[node name="Puissance" type="Label" parent="Stats"]
+margin_left = 400.0
+margin_top = 7.0
+margin_right = 457.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 57, 0 )
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "001"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Defense" type="Label" parent="Stats"]
+margin_left = 400.0
+margin_top = 45.0
+margin_right = 457.0
+margin_bottom = 78.0
+rect_pivot_offset = Vector2( 57, 0 )
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "001"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AttaqueSpecial" type="Label" parent="Stats"]
+margin_left = 400.0
+margin_top = 85.0
+margin_right = 457.0
+margin_bottom = 118.0
+rect_pivot_offset = Vector2( 57, 0 )
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "001"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DefenseSpecial" type="Label" parent="Stats"]
+margin_left = 400.0
+margin_top = 130.0
+margin_right = 457.0
+margin_bottom = 163.0
+rect_pivot_offset = Vector2( 57, 0 )
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "001"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vitesse" type="Label" parent="Stats"]
+margin_left = 400.0
+margin_top = 166.0
+margin_right = 457.0
+margin_bottom = 199.0
+rect_pivot_offset = Vector2( 57, 0 )
+custom_fonts/font = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "001"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OutsideButton" type="TextureButton" parent="."]
+margin_left = 931.645
+margin_top = 0.465059
+margin_right = 1025.64
+margin_bottom = 60.4651
+texture_normal = ExtResource( 27 )
+texture_hover = ExtResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConfirmDialog" type="ConfirmationDialog" parent="."]
+margin_left = 395.0
+margin_top = 266.0
+margin_right = 237.0
+popup_exclusive = true
+window_title = "Confirmation ?"
+resizable = true
+dialog_text = "Voulez-vous modifier votre equipe
+et vos Pokemons stockes ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Warning" type="ConfirmationDialog" parent="."]
+margin_left = 395.0
+margin_top = 266.0
+margin_right = 237.0
+popup_exclusive = true
+window_title = "Attention !"
+resizable = true
+dialog_text = "Veuillez modifier votre equipe !
+Votre premier pokemon n'existe pas"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Graphic/Details" to="." method="_on_Details_pressed"]
+[connection signal="pressed" from="Graphic/Modifier" to="." method="_on_Modifier_pressed"]
+[connection signal="pressed" from="Donnee/Stats" to="." method="_on_Stats_pressed"]
+[connection signal="pressed" from="Donnee/LeaveDetails" to="." method="_on_LeaveDetails_pressed"]
+[connection signal="pressed" from="OutsideButton" to="." method="_on_OutsideButton_pressed"]
+[connection signal="confirmed" from="ConfirmDialog" to="." method="_on_ConfirmDialog_confirmed"]

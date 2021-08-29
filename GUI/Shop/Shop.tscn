@@ -1,0 +1,451 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://img Pokemon/img Shop/Objets.png" type="Texture" id=1]
+[ext_resource path="res://img Pokemon/img Shop/Argent.png" type="Texture" id=2]
+[ext_resource path="res://Font/45Font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Font/Font.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Font/20Font.tres" type="DynamicFont" id=5]
+[ext_resource path="res://img Pokemon/img Shop/Object/Potion.png" type="Texture" id=6]
+[ext_resource path="res://img Pokemon/img Shop/Object/SuperPotion.png" type="Texture" id=7]
+[ext_resource path="res://img Pokemon/img Shop/Object/HyperPotion.png" type="Texture" id=8]
+[ext_resource path="res://img Pokemon/img Shop/Object/MaxPotion.png" type="Texture" id=9]
+[ext_resource path="res://img Pokemon/img Shop/Object/Guerison.png" type="Texture" id=10]
+[ext_resource path="res://img Pokemon/img Shop/Object/Rappel.png" type="Texture" id=11]
+[ext_resource path="res://img Pokemon/img Shop/Object/RappelMax.png" type="Texture" id=12]
+[ext_resource path="res://img Pokemon/img Shop/Object/Antidote.png" type="Texture" id=13]
+[ext_resource path="res://img Pokemon/img Shop/Object/AntiBrule.png" type="Texture" id=14]
+[ext_resource path="res://img Pokemon/img Shop/Object/AntiPara.png" type="Texture" id=15]
+[ext_resource path="res://img Pokemon/img Shop/Object/TotalSoin.png" type="Texture" id=16]
+[ext_resource path="res://img Pokemon/img Shop/Object/Soda.png" type="Texture" id=17]
+[ext_resource path="res://img Pokemon/img Shop/Object/Eau.png" type="Texture" id=18]
+[ext_resource path="res://img Pokemon/img Shop/Object/Limonade.png" type="Texture" id=19]
+[ext_resource path="res://img Pokemon/img Shop/Object/Lait.png" type="Texture" id=20]
+[ext_resource path="res://img Pokemon/img Shop/Object/FaibloBall.png" type="Texture" id=21]
+[ext_resource path="res://img Pokemon/img Shop/Object/HyperBall.png" type="Texture" id=22]
+[ext_resource path="res://img Pokemon/img Shop/Object/SuperBall.png" type="Texture" id=23]
+[ext_resource path="res://img Pokemon/img Shop/Object/Pokeball.png" type="Texture" id=24]
+[ext_resource path="res://img Pokemon/img Shop/Object/FiletBall.png" type="Texture" id=25]
+[ext_resource path="res://img Pokemon/img Shop/Object/MasterBall.png" type="Texture" id=26]
+[ext_resource path="res://img Pokemon/img Shop/Object/SuperRepousse.png" type="Texture" id=27]
+[ext_resource path="res://img Pokemon/img Shop/Object/Repousse.png" type="Texture" id=28]
+[ext_resource path="res://GUI/Shop/Shop.gd" type="Script" id=29]
+[ext_resource path="res://img Pokemon/img Shop/Pokedollar.png" type="Texture" id=30]
+[ext_resource path="res://img Pokemon/img Shop/croix.png" type="Texture" id=31]
+[ext_resource path="res://img Pokemon/img Bag/Graphic/OutsideButton.png" type="Texture" id=32]
+[ext_resource path="res://img Pokemon/img Bag/Graphic/OutsideButton2.png" type="Texture" id=33]
+
+[node name="Shop" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 29 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Argent" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Number" type="Label" parent="Argent"]
+margin_left = 97.0
+margin_top = 75.0
+margin_right = 124.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "99999"
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Argent"]
+margin_left = 233.766
+margin_top = 74.1081
+margin_right = 303.766
+margin_bottom = 168.108
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 30 )
+
+[node name="Objets" type="TextureRect" parent="."]
+margin_left = 326.0
+margin_right = 1026.0
+margin_bottom = 425.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Potion" type="Button" parent="Objets"]
+margin_left = 35.0
+margin_top = 30.0
+margin_right = 151.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 5 )
+text = "200"
+icon = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SuperPotion" type="Button" parent="Objets"]
+margin_left = 35.0
+margin_top = 105.0
+margin_right = 151.0
+margin_bottom = 175.0
+custom_fonts/font = ExtResource( 5 )
+text = "700"
+icon = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HyperPotion" type="Button" parent="Objets"]
+margin_left = 35.0
+margin_top = 180.0
+margin_right = 151.0
+margin_bottom = 250.0
+custom_fonts/font = ExtResource( 5 )
+text = "1200"
+icon = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MaxPotion" type="Button" parent="Objets"]
+margin_left = 35.0
+margin_top = 255.0
+margin_right = 151.0
+margin_bottom = 325.0
+custom_fonts/font = ExtResource( 5 )
+text = "2500"
+icon = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Guerison" type="Button" parent="Objets"]
+margin_left = 35.0
+margin_top = 330.0
+margin_right = 151.0
+margin_bottom = 400.0
+custom_fonts/font = ExtResource( 5 )
+text = "3000"
+icon = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rappel" type="Button" parent="Objets"]
+margin_left = 155.0
+margin_top = 30.0
+margin_right = 271.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 5 )
+text = "1500"
+icon = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RappelMax" type="Button" parent="Objets"]
+margin_left = 155.0
+margin_top = 105.0
+margin_right = 271.0
+margin_bottom = 175.0
+custom_fonts/font = ExtResource( 5 )
+text = "3000"
+icon = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Antidote" type="Button" parent="Objets"]
+margin_left = 155.0
+margin_top = 180.0
+margin_right = 271.0
+margin_bottom = 250.0
+custom_fonts/font = ExtResource( 5 )
+text = "100"
+icon = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AntiPara" type="Button" parent="Objets"]
+margin_left = 155.0
+margin_top = 255.0
+margin_right = 271.0
+margin_bottom = 325.0
+custom_fonts/font = ExtResource( 5 )
+text = "200"
+icon = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AntiBrule" type="Button" parent="Objets"]
+margin_left = 155.0
+margin_top = 330.0
+margin_right = 271.0
+margin_bottom = 400.0
+custom_fonts/font = ExtResource( 5 )
+text = "250"
+icon = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TotalSoin" type="Button" parent="Objets"]
+margin_left = 275.0
+margin_top = 30.0
+margin_right = 391.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 5 )
+text = "600"
+icon = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Eau" type="Button" parent="Objets"]
+margin_left = 275.0
+margin_top = 105.0
+margin_right = 391.0
+margin_bottom = 175.0
+custom_fonts/font = ExtResource( 5 )
+text = "600"
+icon = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Soda" type="Button" parent="Objets"]
+margin_left = 275.0
+margin_top = 180.0
+margin_right = 391.0
+margin_bottom = 250.0
+custom_fonts/font = ExtResource( 5 )
+text = "700"
+icon = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Limonade" type="Button" parent="Objets"]
+margin_left = 275.0
+margin_top = 255.0
+margin_right = 391.0
+margin_bottom = 325.0
+custom_fonts/font = ExtResource( 5 )
+text = "850"
+icon = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lait" type="Button" parent="Objets"]
+margin_left = 275.0
+margin_top = 330.0
+margin_right = 391.0
+margin_bottom = 400.0
+custom_fonts/font = ExtResource( 5 )
+text = "1000"
+icon = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokeball" type="Button" parent="Objets"]
+margin_left = 395.0
+margin_top = 30.0
+margin_right = 511.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 5 )
+text = "200"
+icon = ExtResource( 24 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SuperBall" type="Button" parent="Objets"]
+margin_left = 395.0
+margin_top = 105.0
+margin_right = 511.0
+margin_bottom = 175.0
+custom_fonts/font = ExtResource( 5 )
+text = "600"
+icon = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HyperBall" type="Button" parent="Objets"]
+margin_left = 395.0
+margin_top = 180.0
+margin_right = 511.0
+margin_bottom = 250.0
+custom_fonts/font = ExtResource( 5 )
+text = "1200"
+icon = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FiletBall" type="Button" parent="Objets"]
+margin_left = 395.0
+margin_top = 255.0
+margin_right = 511.0
+margin_bottom = 325.0
+custom_fonts/font = ExtResource( 5 )
+text = "1000"
+icon = ExtResource( 25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FaibloBall" type="Button" parent="Objets"]
+margin_left = 395.0
+margin_top = 330.0
+margin_right = 511.0
+margin_bottom = 400.0
+custom_fonts/font = ExtResource( 5 )
+text = "1000"
+icon = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MasterBall" type="Button" parent="Objets"]
+margin_left = 515.0
+margin_top = 30.0
+margin_right = 631.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 5 )
+text = "10000"
+icon = ExtResource( 26 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Repousse" type="Button" parent="Objets"]
+margin_left = 515.0
+margin_top = 105.0
+margin_right = 631.0
+margin_bottom = 175.0
+custom_fonts/font = ExtResource( 5 )
+text = "500"
+icon = ExtResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SuperRepousse" type="Button" parent="Objets"]
+margin_left = 515.0
+margin_top = 180.0
+margin_right = 631.0
+margin_bottom = 250.0
+custom_fonts/font = ExtResource( 5 )
+text = "1000"
+icon = ExtResource( 27 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BGDown" type="ColorRect" parent="."]
+margin_top = 450.0
+margin_right = 1026.0
+margin_bottom = 600.0
+color = Color( 0.0941176, 0.313726, 0.690196, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="BGDown"]
+margin_left = 19.0
+margin_top = 31.0
+margin_right = 1003.0
+margin_bottom = 124.0
+custom_fonts/normal_font = ExtResource( 4 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "ACHETER DES OBJETS ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ObjectSelected" type="TextureRect" parent="BGDown"]
+margin_left = 800.0
+margin_top = 40.0
+margin_right = 840.0
+margin_bottom = 80.0
+rect_scale = Vector2( 2.5, 2.5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="BGDown"]
+margin_left = 748.95
+margin_top = 5.095
+margin_right = 932.95
+margin_bottom = 38.095
+custom_fonts/font = ExtResource( 4 )
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 18.0896
+margin_top = 248.246
+margin_right = 304.09
+margin_bottom = 316.246
+custom_fonts/font = ExtResource( 3 )
+max_length = 5
+right_icon = ExtResource( 31 )
+placeholder_text = "Number"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Outside" type="TextureButton" parent="."]
+margin_left = 902.267
+margin_top = 337.555
+margin_right = 996.267
+margin_bottom = 397.555
+texture_normal = ExtResource( 33 )
+texture_hover = ExtResource( 32 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Objets/Potion" to="." method="_on_Potion_pressed"]
+[connection signal="pressed" from="Objets/SuperPotion" to="." method="_on_SuperPotion_pressed"]
+[connection signal="pressed" from="Objets/HyperPotion" to="." method="_on_HyperPotion_pressed"]
+[connection signal="pressed" from="Objets/MaxPotion" to="." method="_on_MaxPotion_pressed"]
+[connection signal="pressed" from="Objets/Guerison" to="." method="_on_Guerison_pressed"]
+[connection signal="pressed" from="Objets/Rappel" to="." method="_on_Rappel_pressed"]
+[connection signal="pressed" from="Objets/RappelMax" to="." method="_on_RappelMax_pressed"]
+[connection signal="pressed" from="Objets/Antidote" to="." method="_on_Antidote_pressed"]
+[connection signal="pressed" from="Objets/AntiPara" to="." method="_on_AntiPara_pressed"]
+[connection signal="pressed" from="Objets/AntiBrule" to="." method="_on_AntiBrule_pressed"]
+[connection signal="pressed" from="Objets/TotalSoin" to="." method="_on_TotalSoin_pressed"]
+[connection signal="pressed" from="Objets/Eau" to="." method="_on_Eau_pressed"]
+[connection signal="pressed" from="Objets/Soda" to="." method="_on_Soda_pressed"]
+[connection signal="pressed" from="Objets/Limonade" to="." method="_on_Limonade_pressed"]
+[connection signal="pressed" from="Objets/Lait" to="." method="_on_Lait_pressed"]
+[connection signal="pressed" from="Objets/Pokeball" to="." method="_on_Pokeball_pressed"]
+[connection signal="pressed" from="Objets/SuperBall" to="." method="_on_SuperBall_pressed"]
+[connection signal="pressed" from="Objets/HyperBall" to="." method="_on_HyperBall_pressed"]
+[connection signal="pressed" from="Objets/FiletBall" to="." method="_on_FiletBall_pressed"]
+[connection signal="pressed" from="Objets/FaibloBall" to="." method="_on_FaibloBall_pressed"]
+[connection signal="pressed" from="Objets/MasterBall" to="." method="_on_MasterBall_pressed"]
+[connection signal="pressed" from="Objets/Repousse" to="." method="_on_Repousse_pressed"]
+[connection signal="pressed" from="Objets/SuperRepousse" to="." method="_on_SuperRepousse_pressed"]
+[connection signal="text_entered" from="LineEdit" to="." method="_on_LineEdit_text_entered"]
+[connection signal="button_up" from="Outside" to="." method="_on_Outside_button_up"]
