@@ -12,7 +12,7 @@
  - There are still lots of bug, it's not my intention to correct the game because it has been created on training purpose
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notes 📜
-- You can copy the files , play the game, continue the project ! Do what you want from it !
+- You can copy the files , play the game, continue the project ! Do what you want with it !
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Contact me 📞
 ✅ mateo.lelong@gmail.com
