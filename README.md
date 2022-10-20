@@ -1,18 +1,18 @@
-# _Pokemon-Bleu-Eau_
+# Pokemon-Blue-Water (French game Pokemon-Bleu-Eau)
 
 ## Informations ℹ️
-- Last version => Februar 2021
-- Actual Version supported : Windows
+- Last version : Februar 2021
+- Final version : Februar 2021
+- Supported OS : Windows
 - Made with Godot Engine in Gdscript only
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Descriptions 🔎
- - This repository countains all our Fun Pokemon remaster project ! 
- - You can test the game if you want, it's the alpha for now, we are working on it to finish this wonderfull challenge ! 
-> Have fun !
+ - This repository countains all my pokemon remaster project ! 
+ - The game was not finished, 20% of the game is available while almost 50% of functionnalities are unable
+ - There are still lots of bug, it's not my intention to correct the game because it has been created on training purpose
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Notes 📜
-- You can copy the files , play the game, continue the project ! 
+- You can copy the files , play the game, continue the project ! Do what you want from it !
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Contact us 📞
+## Contact me 📞
 ✅ mateo.lelong@gmail.com
-> ❓ We are available to answer all of your questions : we listen to the players ❓
